@@ -1,52 +1,28 @@
 //express 모듈 선언
-const express = require('express');
-//path 내장 모듈 선언
-const path = require('path');
-//crypto 모듈 선언
-const crypto = require('crypto');
-//fs
-const fs = require('fs');
+const express = require("express");
+// //path 내장 모듈 선언
+// const path = require("path");
 
 //포트번호 설정
 const app = express();
-app.set('port', process.env.PORT || 3000);
+app.set("port", process.env.PORT || 3000);
 
 //parser 설정
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
+// // 정적 파일을 제공할 디렉토리를 지정합니다.
+// app.use(express.static('public'));
+
 // //라우터 선언
-// const indexRouter = require('./routes');
-// const uploadRouter = require('./routes/upload');
+const indexRouter = require('./routes');
+const gameRouter = require('./routes/game');
+const dbRouter = require('./routes/dbres');
 
 // //라우터 설정
-// app.use('/', indexRouter);
-// app.use('/upload', uploadRouter);
-
-
-// get 요청이 들어오면
-app.get(
-  '/',
-  (req, res, next) => {
-    console.log('GET / 요청 실행');
-    next();
-  },
-  (req, res) => {
-    try {
-      res.sendFile(path.join(__dirname, './views/index.html'));
-    } catch (error) {
-      console.log(error);
-    }
-  }
-);
-
-// post 요청이 들어오면
-app.post(
-  '/gogame',
-  (req, res, next) => {
-    console.log('POST /gogame 요청 실행');
-  }
-);
+app.use('/', indexRouter);
+app.use('/gogame', gameRouter);
+app.use('/getDataInsert', dbRouter);
 
 // [express] 500 error 라우트 설정
 app.use((err, req, res, next) => {
@@ -56,10 +32,10 @@ app.use((err, req, res, next) => {
 
 // [express] 404 error 라우트 설정
 app.use((req, res, next) => {
-  res.status(404).send('Not Found');
+  res.status(404).send("Not Found");
 });
 
-app.listen(app.get('port'), () => {
+app.listen(app.get("port"), () => {
   //서버를 실행한다. 메서드를 통해 포트 번호를 가져오고 해당 포트에서 대기한다.
-  console.log(app.get('port'), '번 포트에서 대기 중');
+  console.log(app.get("port"), "번 포트에서 대기 중");
 });

@@ -12,7 +12,7 @@
     <form action="">
         <label for="inputText">4자리 숫자를 입력하세요:</label><br />
         <input type="text" id="inputText" />
-        <button type="submit" id="inputButton" />
+        <button type="submit" id="inputButton"></button>
     </form>
     <button id="resetButton"></button>
     <button id="hintButton"></button>
@@ -23,6 +23,7 @@
     <p id="seconds" style="color: green;"></p>
     <p id="hint"></p>
 
+    
     <script>
         // 0. 전역변수 선언
         let array = []; // 답
@@ -97,6 +98,23 @@
             // 3) 답을 맞힌 경우
             if (strike === 4) {
                 console.log('홈런!!');
+                
+                // 시도횟수
+                let trycount = history.length; // 입력한 값을 저장한 배열의 길이만큼 시도
+                const data = {"trycount":trycount};
+                //console.log('data : ',data);
+
+                // db insert 요청
+                fetch("/getDataInsert", {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(data)
+                })
+                    .then((response) => response.json())
+                    .then((data) => {
+                    //console.log(data);
+                });
+                
                 messageNotification('홈런!!', 5);
                 setTimeout(() => {
                     messageNotification('다음문제 시작', 3);
@@ -250,10 +268,6 @@
                 num = Math.floor(Math.random() * 10);
                 hintArr[hintArr.length - 1] = num;
             }
-            //console.log(`hintArr : ${hintArr}`);
-            //console.log(`hintArr.length : ${hintArr.length}`);
-            //console.log(`array : ${array}`);
-            //console.log(`array.length : ${array.length}`);
 
             // 4) 내림차순으로 정렬하기
             hintArr.sort().reverse();
@@ -284,6 +298,8 @@
         //////////////////////////////////////////////////////////////////////////////////
 
         createArr(); //게임 시작
+
+
     </script>
 </body>
 
