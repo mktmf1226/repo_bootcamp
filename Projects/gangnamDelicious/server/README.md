@@ -5,13 +5,13 @@ Node.js를 이용한 백엔드단
 - select문 insert문 정상 작동
 
 ----------------------------------------------------------
-현재 생성된 delist 테이블
+현재 생성된 delist 테이블<br/>
 ![image](https://github.com/mktmf1226/repo_bootcamp/assets/110094602/c130b4fc-a9a7-4830-a312-a437227eeab1)
 
-- sql문
-create database gangnam_db;
-use gangnam_db;
-create table delist(
+sql문
+- create database gangnam_db;
+- use gangnam_db;
+- create table delist(
 	num INT AUTO_INCREMENT NOT NULL PRIMARY KEY, -- 순번(PK)
 	userID CHAR(12) NOT NULL, -- 아이디(FK) 
 	foodName CHAR(20) NOT NULL, -- 물품 
@@ -21,8 +21,8 @@ create table delist(
 	regdate datetime default now() -- 수량, smallint 자료형은 2bytes
 );
 
-drop table delist;
+- drop table delist;
 
-INSERT INTO delist(userID, foodName, spaceName, price, stars, regdate) VALUES ("userTEST", "혜자도시락", "GS25", 5000, 5, "2008-8-8"); 
-INSERT INTO delist(userID, foodName, spaceName, price, stars, regdate) VALUES ("userTEST", "치즈떡볶이", "신전떡볶이", 15000, 4, "2009-9-9"); 
-select * from delist;
+- INSERT INTO delist(userID, foodName, spaceName, price, stars, regdate) VALUES ("userTEST", "혜자도시락", "GS25", 5000, 5, "2008-8-8"); 
+- INSERT INTO delist(userID, foodName, spaceName, price, stars, regdate) VALUES ("userTEST", "치즈떡볶이", "신전떡볶이", 15000, 4, "2009-9-9"); 
+- select * from delist;
