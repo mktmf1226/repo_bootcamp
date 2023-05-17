@@ -10,8 +10,10 @@ router.get('/', (req, res, next) => {
   },
   (req, res) => {
     try {
-      res.sendFile(path.join(__dirname, "../views/game.html"));
-
+      const username = req.query.username;
+      req.app.locals.username = username;
+      //console.log(username);
+      res.sendFile(path.join(__dirname, "../views/game.html"));      
     } catch (error) {
       console.log(error);
     }
