@@ -8,7 +8,7 @@ const DeliciousList = ({delist, title}) => {
   return (
     <div className="delicious-list">
       <p>{delist.message}</p>
-      <h2>{title}</h2>
+      <h2 className="title">{title}</h2>
 
       {delist.map((item) => (
         <div className="delicious-preview" key={item.num}>
@@ -18,8 +18,8 @@ const DeliciousList = ({delist, title}) => {
           <p>가게이름:{item.spaceName}</p>
           <p>별점:{item.stars}</p>
           <p>가격:{item.price}원</p>
-          <p>{item.userID}</p>
-          <p>{item.regdate}</p>
+          {/* <p>작성자:{item.userID}</p>
+          <p>생성일:{item.regdate}</p> */}
         </div>
       ))}
     </div>

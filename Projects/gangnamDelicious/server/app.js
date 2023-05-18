@@ -21,10 +21,12 @@ app.use(cors());
 // //라우터 선언
 const indexRouter = require('./routes');
 const insertdelistRouter = require('./routes/insertdelist');
+const delistDetailRouter = require('./routes/delistDetail');
 
 // //라우터 설정
 app.use('/', indexRouter);
 app.use('/insertdelist', insertdelistRouter);
+app.use('/delist', delistDetailRouter);
 
 // [express] 500 error 라우트 설정
 app.use((err, req, res, next) => {
