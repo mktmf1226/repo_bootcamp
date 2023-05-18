@@ -21,7 +21,6 @@ sql문
 	regdate datetime default now() -- 수량, smallint 자료형은 2bytes
 );
 
-- drop table delist;
 
 - INSERT INTO delist(userID, foodName, spaceName, price, stars, regdate) VALUES ("userTEST", "혜자도시락", "GS25", 5000, 5, "2008-8-8"); 
 - INSERT INTO delist(userID, foodName, spaceName, price, stars, regdate) VALUES ("userTEST", "치즈떡볶이", "신전떡볶이", 15000, 4, "2009-9-9"); 
