@@ -28,4 +28,4 @@
 디테일 화면 이미지(http://localhost:3000/delist/2)
 
 ![image](https://github.com/mktmf1226/repo_bootcamp/assets/110094602/529c0e64-e740-434f-99fe-e40197c731e9)
-- delete 버튼 구현
+- delete 구현
