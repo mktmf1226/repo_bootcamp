@@ -40,6 +40,11 @@
         const $bttnStart = document.querySelector('#bttnStart');
         const gameStart = () => {
             console.log('game started');
+
+            //초기화
+            $historyArea.innerHTML = '';
+            tryCount = 10;
+
             const word = new Word(wordArr); // 랜덤단어뽑기 뉴 인스턴스
             //console.log(word.toString());
             answer=word.pickupOne(); //답 넣어주기
@@ -65,6 +70,7 @@
 
         // historyArea
         const $historyArea = document.querySelector('#historyArea');
+        const $inputText = document.querySelector('#inputText');
 
         //랜덤 단어 뽑기 클래스
         class Word{
@@ -105,42 +111,47 @@
 
             hang(){
                 if(tryCount>0){
-                    // 조건1 입력한 알파벳이 한글자인가?
-                    if(this.string.length === 1){
-                        let newArr = [];
-                        let newIndex = this.answer.indexOf(this.string);
-                        while(newIndex !== -1){
-                            newArr.push(newIndex);
-                            newIndex = this.answer.indexOf(this.string, newIndex+1);
+                    if(historyArr.indexOf(this.string) === -1){
+                        // 조건1 입력한 알파벳이 한글자인가?
+                        if(this.string.length === 1){
+                            let newArr = [];
+                            let newIndex = this.answer.indexOf(this.string);
+                            while(newIndex !== -1){
+                                newArr.push(newIndex);
+                                newIndex = this.answer.indexOf(this.string, newIndex+1);
+                            }
+
+                            for(let i = 0; i < newArr.length; i++){
+                                var newNode = document.createElement('em');
+                                newNode.id=`em${newArr[i]}`;
+                                newNode.innerHTML = this.string;
+                                
+                                // replaceWith()
+                                document.querySelector(`#em${newArr[i]}`).replaceWith(newNode);
+                            }
+
+                            tryCount--;
                         }
 
-                        for(let i = 0; i < newArr.length; i++){
-                            var newNode = document.createElement('em');
-                            newNode.id=`em${newArr[i]}`;
-                            newNode.innerHTML = this.string;
-                            
-                            // replaceWith()
-                            document.querySelector(`#em${newArr[i]}`).replaceWith(newNode);
+                        // 조건2 입력한 알파벳이 두글자 이상인가?(단어인가?)
+                        if(this.string.length >= 2){
+                            //정답이면
+                            if(this.string === this.answer){
+                                alert('정답!')
+                            }else{
+                                alert('오답!')
+                            }
+
+                            tryCount --;
                         }
 
-                        tryCount--;
+                        //화면에 history 출력하기
+                        historyArr.push(this.string);
+                        $historyArea.innerHTML += `<p>${this.string}</p>`;
+                    }else{
+                        alert('중복된 단어입니다.');
+                        $inputText.value ='';
                     }
-
-                    // 조건2 입력한 알파벳이 두글자 이상인가?(단어인가?)
-                    if(this.string.length >= 2){
-                        //정답이면
-                        if(this.string === this.answer){
-                            alert('정답!')
-                        }else{
-                            alert('오답!')
-                        }
-
-                        tryCount --;
-                    }
-
-                    //화면에 history 출력하기
-                    const newHistory = historyArr.push(this.string);
-                    $historyArea.innerHTML += `<p>${this.string}</p>`;
                 }else if(tryCount === 0){
                     alert("게임 오버");
                 }
