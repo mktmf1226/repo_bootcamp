@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hang Man Game</title>
+</head>
+<body>
+    
+    <h2>행맨게임</h2>
+    <button id='bttnStart'>게임 시작</button>
+    <div id="underbarArea">
+        <!-- 
+            <em id="0">_</em>
+        -->
+    </div>
+
+    <input type="text" id="inputText"/>
+    <button id="bttnSubmit">입력</button>
+
+    <div id="historyArea">
+
+    </div>
+
+
+
+    <script>
+        //전역변수
+        const wordArr=['apple', 'pear', 'banana', 'orange', 'strawberry'];
+        const tryCountNum=10;
+        let answer;
+        let tryCount=tryCountNum;
+        let historyArr=[];
+
+        
+
+        //addEventListener 메서드 방식
+        // 게임 시작 버튼
+        const $bttnStart = document.querySelector('#bttnStart');
+        const gameStart = () => {
+            console.log('game started');
+            const word = new Word(wordArr); // 랜덤단어뽑기 뉴 인스턴스
+            //console.log(word.toString());
+            answer=word.pickupOne(); //답 넣어주기
+            console.log(answer);
+
+            const underbar = new UnderBar(answer); // 언더바 뉴 인스턴스
+            underbar.SetOrigin(); // 언더바 그리기
+        }
+        $bttnStart.addEventListener('click', gameStart);
+
+        // 언더바
+        const $underbarArea = document.querySelector('#underbarArea');
+
+        // 입력 버튼
+        const $bttnSubmit = document.querySelector('#bttnSubmit');
+        const submit = () => {
+            const $inputText= document.querySelector('#inputText');
+            // console.log($inputText.value);
+            const hangman = new Hangman($inputText.value.trim(), answer);
+            hangman.hang();
+        }
+        $bttnSubmit.addEventListener('click', submit);
+
+        // historyArea
+        const $historyArea = document.querySelector('#historyArea');
+
+        //랜덤 단어 뽑기 클래스
+        class Word{
+            constructor(wordArr){
+                this.wordArr = wordArr;
+            }
+
+            pickupOne() {
+                return this.wordArr[Math.floor(Math.random() * this.wordArr.length)];
+            }
+
+            toString() { 
+                return `전달받은 배열은 ${this.wordArr} `;
+            }
+        }
+
+        //밑줄 그리기 클래스
+        class UnderBar{
+            constructor(answer) {
+                this.length=answer.length;
+            }
+
+            SetOrigin(){
+                $underbarArea.innerHTML = '';
+
+                for(let i=0;i<this.length;i++){
+                $underbarArea.innerHTML += `<em id="em${i}">_</em>&nbsp;`;
+                }
+            }
+        }
+
+        //정답확인 클래스
+        class Hangman{
+            constructor(inputTextValue, answer){
+                this.string = inputTextValue;
+                this.answer = answer;
+            }
+
+            hang(){
+                if(tryCount>0){
+                    // 조건1 입력한 알파벳이 한글자인가?
+                    if(this.string.length === 1){
+                        let newArr = [];
+                        let newIndex = this.answer.indexOf(this.string);
+                        while(newIndex !== -1){
+                            newArr.push(newIndex);
+                            newIndex = this.answer.indexOf(this.string, newIndex+1);
+                        }
+
+                        for(let i = 0; i < newArr.length; i++){
+                            var newNode = document.createElement('em');
+                            newNode.id=`em${newArr[i]}`;
+                            newNode.innerHTML = this.string;
+                            
+                            // replaceWith()
+                            document.querySelector(`#em${newArr[i]}`).replaceWith(newNode);
+                        }
+
+                        tryCount--;
+                    }
+
+                    // 조건2 입력한 알파벳이 두글자 이상인가?(단어인가?)
+                    if(this.string.length >= 2){
+                        //정답이면
+                        if(this.string === this.answer){
+                            alert('정답!')
+                        }else{
+                            alert('오답!')
+                        }
+
+                        tryCount --;
+                    }
+
+                    //화면에 history 출력하기
+                    const newHistory = historyArr.push(this.string);
+                    $historyArea.innerHTML += `<p>${this.string}</p>`;
+                }else if(tryCount === 0){
+                    alert("게임 오버");
+                }
+            }
+        }
+
+
+    </script>
+</body>
+</html>
