@@ -244,3 +244,20 @@
 2023-05-23 17:26:24.074[info] app start
 2023-05-23 17:26:24.141[info] DB connection success
 2023-05-23 17:26:24.155[info] Sequelize sync success
+2023-05-23 17:39:20.748[info] app start
+2023-05-23 17:39:20.822[info] DB connection success
+2023-05-23 17:39:20.839[info] Sequelize sync success
+2023-05-23 17:58:05.638[info] app start
+2023-05-23 17:58:05.694[info] DB connection success
+2023-05-23 17:58:05.711[info] Sequelize sync success
+2023-05-23 18:01:07.429[info] app start
+2023-05-23 18:01:07.521[info] DB connection success
+2023-05-23 18:01:07.536[info] Sequelize sync success
+2023-05-23 18:03:00.768[info] app start
+2023-05-23 18:03:00.857[info] DB connection success
+2023-05-23 18:03:00.873[info] Sequelize sync success
+2023-05-23 18:03:08.066[info] (department.reg.params) {"name":"조승민팀12","code":"SMCTEAM12","description":"토큰갱신후 테스트"}
+2023-05-23 18:03:08.080[error] (departmentService.reg) SequelizeUniqueConstraintError: Validation error
+2023-05-23 18:03:17.946[info] (department.reg.params) {"name":"조승민팀13","code":"SMCTEAM13","description":"토큰갱신후 테스트"}
+2023-05-23 18:03:17.960[debug] (departmentService.reg) {"id":14,"name":"조승민팀13","code":"SMCTEAM13","description":"토큰갱신후 테스트","updatedAt":"2023-05-23T09:03:17.947Z","createdAt":"2023-05-23T09:03:17.947Z"}
+2023-05-23 18:03:17.961[info] (department.reg.result) {"id":14,"name":"조승민팀13","code":"SMCTEAM13","description":"토큰갱신후 테스트","updatedAt":"2023-05-23T09:03:17.947Z","createdAt":"2023-05-23T09:03:17.947Z"}
