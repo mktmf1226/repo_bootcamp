@@ -1,0 +1,246 @@
+2023-05-23 10:16:41.612[info] app start
+2023-05-23 10:16:41.682[info] DB connection success
+2023-05-23 10:16:41.726[info] Sequelize sync success
+2023-05-23 10:18:23.796[info] app start
+2023-05-23 10:18:23.866[info] DB connection success
+2023-05-23 10:18:23.883[info] Sequelize sync success
+2023-05-23 10:18:57.495[info] app start
+2023-05-23 10:18:57.550[info] DB connection success
+2023-05-23 10:18:57.592[info] Sequelize sync success
+2023-05-23 10:41:53.171[info] app start
+2023-05-23 10:41:53.230[info] DB connection success
+2023-05-23 10:41:53.245[info] Sequelize sync success
+2023-05-23 11:05:59.888[info] app start
+2023-05-23 11:05:59.953[info] DB connection success
+2023-05-23 11:05:59.970[info] Sequelize sync success
+2023-05-23 11:06:34.508[info] app start
+2023-05-23 11:06:34.589[info] DB connection success
+2023-05-23 11:06:34.610[info] Sequelize sync success
+2023-05-23 11:06:35.981[info] app start
+2023-05-23 11:06:36.042[info] DB connection success
+2023-05-23 11:06:36.062[info] Sequelize sync success
+2023-05-23 11:07:07.118[info] app start
+2023-05-23 11:07:07.188[info] DB connection success
+2023-05-23 11:07:07.206[info] Sequelize sync success
+2023-05-23 11:07:08.424[info] app start
+2023-05-23 11:07:08.483[info] DB connection success
+2023-05-23 11:07:08.496[info] Sequelize sync success
+2023-05-23 11:07:21.509[info] app start
+2023-05-23 11:07:21.573[info] DB connection success
+2023-05-23 11:07:21.590[info] Sequelize sync success
+2023-05-23 11:08:17.332[info] app start
+2023-05-23 11:08:17.405[info] DB connection success
+2023-05-23 11:08:17.433[info] Sequelize sync success
+2023-05-23 11:09:45.443[info] (user.reg.params) {"departmentId":1,"name":"김개발","userid":"kim","password":"1","role":"member","email":"[email protected]","phone":"010-1234-5678"}
+2023-05-23 11:09:45.463[debug] (userService.reg) {"id":4,"departmentId":1,"name":"김개발","userid":"kim","role":"member","email":"[email protected]","phone":"010-1234-5678","updatedAt":"2023-05-23T02:09:45.446Z","createdAt":"2023-05-23T02:09:45.446Z"}
+2023-05-23 11:09:45.464[info] (user.reg.result) {"id":4,"departmentId":1,"name":"김개발","userid":"kim","role":"member","email":"[email protected]","phone":"010-1234-5678","updatedAt":"2023-05-23T02:09:45.446Z","createdAt":"2023-05-23T02:09:45.446Z"}
+2023-05-23 11:12:06.983[info] (user.list.params) {"name":"김개발"}
+2023-05-23 11:12:07.037[debug] (userService.list) {"count":1,"rows":[{"id":4,"departmentId":1,"name":"김개발","userid":"kim","role":"member","email":"[email protected]","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-05-23T02:09:45.000Z","updatedAt":"2023-05-23T02:09:45.000Z","deletedAt":null,"Department":null}]}
+2023-05-23 11:12:07.040[info] (user.list.result) {"count":1,"rows":[{"id":4,"departmentId":1,"name":"김개발","userid":"kim","role":"member","email":"[email protected]","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-05-23T02:09:45.000Z","updatedAt":"2023-05-23T02:09:45.000Z","deletedAt":null,"Department":null}]}
+2023-05-23 11:13:27.105[info] (user.list.params) {"userid":"1"}
+2023-05-23 11:13:27.118[debug] (userService.list) {"count":0,"rows":[]}
+2023-05-23 11:13:27.119[info] (user.list.result) {"count":0,"rows":[]}
+2023-05-23 11:14:03.050[info] (user.list.params) {"name":"조승"}
+2023-05-23 11:14:03.066[debug] (userService.list) {"count":3,"rows":[{"id":3,"departmentId":2,"name":"조승민3","userid":"smc3","role":"staff","email":"test@gmail.com","phone":"010-1234-1234","updatedPwDate":null,"createdAt":"2023-05-23T00:00:00.000Z","updatedAt":"2023-05-23T00:00:00.000Z","deletedAt":null,"Department":{"id":2,"name":"승민","code":"2","description":"1","createdAt":"2023-05-22T00:00:00.000Z","updatedAt":"2023-05-22T00:00:00.000Z","deletedAt":null}},{"id":2,"departmentId":2,"name":"조승민2","userid":"smc2","role":"staff","email":"test@gmail.com","phone":"010-1234-1234","updatedPwDate":null,"createdAt":"2023-05-23T00:00:00.000Z","updatedAt":"2023-05-23T00:00:00.000Z","deletedAt":null,"Department":{"id":2,"name":"승민","code":"2","description":"1","createdAt":"2023-05-22T00:00:00.000Z","updatedAt":"2023-05-22T00:00:00.000Z","deletedAt":null}},{"id":1,"departmentId":2,"name":"조승민","userid":"smc","role":"staff","email":"test@gmail.com","phone":"010-1234-1234","updatedPwDate":null,"createdAt":"2023-05-23T00:00:00.000Z","updatedAt":"2023-05-23T00:00:00.000Z","deletedAt":null,"Department":{"id":2,"name":"승민","code":"2","description":"1","createdAt":"2023-05-22T00:00:00.000Z","updatedAt":"2023-05-22T00:00:00.000Z","deletedAt":null}}]}
+2023-05-23 11:14:03.069[info] (user.list.result) {"count":3,"rows":[{"id":3,"departmentId":2,"name":"조승민3","userid":"smc3","role":"staff","email":"test@gmail.com","phone":"010-1234-1234","updatedPwDate":null,"createdAt":"2023-05-23T00:00:00.000Z","updatedAt":"2023-05-23T00:00:00.000Z","deletedAt":null,"Department":{"id":2,"name":"승민","code":"2","description":"1","createdAt":"2023-05-22T00:00:00.000Z","updatedAt":"2023-05-22T00:00:00.000Z","deletedAt":null}},{"id":2,"departmentId":2,"name":"조승민2","userid":"smc2","role":"staff","email":"test@gmail.com","phone":"010-1234-1234","updatedPwDate":null,"createdAt":"2023-05-23T00:00:00.000Z","updatedAt":"2023-05-23T00:00:00.000Z","deletedAt":null,"Department":{"id":2,"name":"승민","code":"2","description":"1","createdAt":"2023-05-22T00:00:00.000Z","updatedAt":"2023-05-22T00:00:00.000Z","deletedAt":null}},{"id":1,"departmentId":2,"name":"조승민","userid":"smc","role":"staff","email":"test@gmail.com","phone":"010-1234-1234","updatedPwDate":null,"createdAt":"2023-05-23T00:00:00.000Z","updatedAt":"2023-05-23T00:00:00.000Z","deletedAt":null,"Department":{"id":2,"name":"승민","code":"2","description":"1","createdAt":"2023-05-22T00:00:00.000Z","updatedAt":"2023-05-22T00:00:00.000Z","deletedAt":null}}]}
+2023-05-23 11:15:23.639[info] (user.list.params) {}
+2023-05-23 11:15:23.654[debug] (userService.list) {"count":4,"rows":[{"id":4,"departmentId":1,"name":"김개발","userid":"kim","role":"member","email":"[email protected]","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-05-23T02:09:45.000Z","updatedAt":"2023-05-23T02:09:45.000Z","deletedAt":null,"Department":null},{"id":3,"departmentId":2,"name":"조승민3","userid":"smc3","role":"staff","email":"test@gmail.com","phone":"010-1234-1234","updatedPwDate":null,"createdAt":"2023-05-23T00:00:00.000Z","updatedAt":"2023-05-23T00:00:00.000Z","deletedAt":null,"Department":{"id":2,"name":"승민","code":"2","description":"1","createdAt":"2023-05-22T00:00:00.000Z","updatedAt":"2023-05-22T00:00:00.000Z","deletedAt":null}},{"id":2,"departmentId":2,"name":"조승민2","userid":"smc2","role":"staff","email":"test@gmail.com","phone":"010-1234-1234","updatedPwDate":null,"createdAt":"2023-05-23T00:00:00.000Z","updatedAt":"2023-05-23T00:00:00.000Z","deletedAt":null,"Department":{"id":2,"name":"승민","code":"2","description":"1","createdAt":"2023-05-22T00:00:00.000Z","updatedAt":"2023-05-22T00:00:00.000Z","deletedAt":null}},{"id":1,"departmentId":2,"name":"조승민","userid":"smc","role":"staff","email":"test@gmail.com","phone":"010-1234-1234","updatedPwDate":null,"createdAt":"2023-05-23T00:00:00.000Z","updatedAt":"2023-05-23T00:00:00.000Z","deletedAt":null,"Department":{"id":2,"name":"승민","code":"2","description":"1","createdAt":"2023-05-22T00:00:00.000Z","updatedAt":"2023-05-22T00:00:00.000Z","deletedAt":null}}]}
+2023-05-23 11:15:23.657[info] (user.list.result) {"count":4,"rows":[{"id":4,"departmentId":1,"name":"김개발","userid":"kim","role":"member","email":"[email protected]","phone":"010-1234-5678","updatedPwDate":null,"createdAt":"2023-05-23T02:09:45.000Z","updatedAt":"2023-05-23T02:09:45.000Z","deletedAt":null,"Department":null},{"id":3,"departmentId":2,"name":"조승민3","userid":"smc3","role":"staff","email":"test@gmail.com","phone":"010-1234-1234","updatedPwDate":null,"createdAt":"2023-05-23T00:00:00.000Z","updatedAt":"2023-05-23T00:00:00.000Z","deletedAt":null,"Department":{"id":2,"name":"승민","code":"2","description":"1","createdAt":"2023-05-22T00:00:00.000Z","updatedAt":"2023-05-22T00:00:00.000Z","deletedAt":null}},{"id":2,"departmentId":2,"name":"조승민2","userid":"smc2","role":"staff","email":"test@gmail.com","phone":"010-1234-1234","updatedPwDate":null,"createdAt":"2023-05-23T00:00:00.000Z","updatedAt":"2023-05-23T00:00:00.000Z","deletedAt":null,"Department":{"id":2,"name":"승민","code":"2","description":"1","createdAt":"2023-05-22T00:00:00.000Z","updatedAt":"2023-05-22T00:00:00.000Z","deletedAt":null}},{"id":1,"departmentId":2,"name":"조승민","userid":"smc","role":"staff","email":"test@gmail.com","phone":"010-1234-1234","updatedPwDate":null,"createdAt":"2023-05-23T00:00:00.000Z","updatedAt":"2023-05-23T00:00:00.000Z","deletedAt":null,"Department":{"id":2,"name":"승민","code":"2","description":"1","createdAt":"2023-05-22T00:00:00.000Z","updatedAt":"2023-05-22T00:00:00.000Z","deletedAt":null}}]}
+2023-05-23 11:30:25.255[info] app start
+2023-05-23 11:30:25.321[info] DB connection success
+2023-05-23 11:30:25.349[info] Sequelize sync success
+2023-05-23 11:32:02.955[info] app start
+2023-05-23 11:32:03.028[info] DB connection success
+2023-05-23 11:32:03.047[info] Sequelize sync success
+2023-05-23 11:36:36.167[info] app start
+2023-05-23 11:36:36.228[info] DB connection success
+2023-05-23 11:36:36.243[info] Sequelize sync success
+2023-05-23 11:36:41.655[info] app start
+2023-05-23 11:36:41.708[info] DB connection success
+2023-05-23 11:36:41.724[info] Sequelize sync success
+2023-05-23 11:37:15.352[info] (user.info.params) {"id":"1"}
+2023-05-23 11:37:15.376[debug] (userService.info) {"id":1,"departmentId":2,"name":"조승민","userid":"smc","password":"1234","role":"staff","email":"test@gmail.com","phone":"010-1234-1234","updatedPwDate":null,"createdAt":"2023-05-23T00:00:00.000Z","updatedAt":"2023-05-23T00:00:00.000Z","deletedAt":null}
+2023-05-23 11:37:15.378[info] (user.info.result) {"id":1,"departmentId":2,"name":"조승민","userid":"smc","password":"1234","role":"staff","email":"test@gmail.com","phone":"010-1234-1234","updatedPwDate":null,"createdAt":"2023-05-23T00:00:00.000Z","updatedAt":"2023-05-23T00:00:00.000Z","deletedAt":null}
+2023-05-23 11:38:22.418[info] (user.update.params) {"id":"1","departmentId":1,"name":"김개발","role":"member","eamil":"[email protected]","phone":"010-1234-5678"}
+2023-05-23 11:38:22.447[debug] (userService.edit) {"updatedCount":1}
+2023-05-23 11:38:22.448[info] (user.update.result) {"updatedCount":1}
+2023-05-23 11:39:08.764[info] (user.delete.params) {"id":"1"}
+2023-05-23 11:39:08.782[debug] (userService.delete) {"deletedCount":1}
+2023-05-23 11:39:08.783[info] (user.delete.result) {"deletedCount":1}
+2023-05-23 13:12:37.395[info] app start
+2023-05-23 13:12:37.468[info] DB connection success
+2023-05-23 13:12:37.486[info] Sequelize sync success
+2023-05-23 13:12:44.604[info] app start
+2023-05-23 13:12:44.669[info] DB connection success
+2023-05-23 13:12:44.686[info] Sequelize sync success
+2023-05-23 13:12:52.473[info] (user.list.params) {"name":"조승"}
+2023-05-23 13:12:52.479[error] (userService.list) SequelizeEagerLoadingError: Department is associated to User using an alias. You've included an alias (Jeongdaseul), but it does not match the alias(es) defined in your association (Department).
+2023-05-23 13:13:54.131[info] app start
+2023-05-23 13:13:54.232[info] DB connection success
+2023-05-23 13:13:54.246[info] Sequelize sync success
+2023-05-23 13:13:59.758[info] (user.list.params) {"name":"조승"}
+2023-05-23 13:13:59.762[error] (userService.list) SequelizeEagerLoadingError: Department is associated to User using an alias. You've included an alias (Jeongdaseul), but it does not match the alias(es) defined in your association (Department).
+2023-05-23 13:15:03.406[info] app start
+2023-05-23 13:15:03.494[info] DB connection success
+2023-05-23 13:15:03.509[info] Sequelize sync success
+2023-05-23 13:15:05.209[info] app start
+2023-05-23 13:15:05.267[info] DB connection success
+2023-05-23 13:15:05.284[info] Sequelize sync success
+2023-05-23 13:15:08.181[info] (user.list.params) {"name":"조승"}
+2023-05-23 13:15:08.187[error] (userService.list) SequelizeEagerLoadingError: Department is associated to User using an alias. You've included an alias (Jeongdaseul), but it does not match the alias(es) defined in your association (Department).
+2023-05-23 13:15:14.259[info] app start
+2023-05-23 13:15:14.319[info] DB connection success
+2023-05-23 13:15:14.347[info] Sequelize sync success
+2023-05-23 13:15:18.282[info] (user.list.params) {"name":"조승"}
+2023-05-23 13:15:18.302[debug] (userService.list) {"count":2,"rows":[{"id":3,"departmentId":2,"name":"조승민3","userid":"smc3","role":"staff","email":"test@gmail.com","phone":"010-1234-1234","updatedPwDate":null,"createdAt":"2023-05-23T00:00:00.000Z","updatedAt":"2023-05-23T00:00:00.000Z","deletedAt":null,"Department":{"id":2,"name":"승민","code":"2","description":"1","createdAt":"2023-05-22T00:00:00.000Z","updatedAt":"2023-05-22T00:00:00.000Z","deletedAt":null}},{"id":2,"departmentId":2,"name":"조승민2","userid":"smc2","role":"staff","email":"test@gmail.com","phone":"010-1234-1234","updatedPwDate":null,"createdAt":"2023-05-23T00:00:00.000Z","updatedAt":"2023-05-23T00:00:00.000Z","deletedAt":null,"Department":{"id":2,"name":"승민","code":"2","description":"1","createdAt":"2023-05-22T00:00:00.000Z","updatedAt":"2023-05-22T00:00:00.000Z","deletedAt":null}}]}
+2023-05-23 13:15:18.304[info] (user.list.result) {"count":2,"rows":[{"id":3,"departmentId":2,"name":"조승민3","userid":"smc3","role":"staff","email":"test@gmail.com","phone":"010-1234-1234","updatedPwDate":null,"createdAt":"2023-05-23T00:00:00.000Z","updatedAt":"2023-05-23T00:00:00.000Z","deletedAt":null,"Department":{"id":2,"name":"승민","code":"2","description":"1","createdAt":"2023-05-22T00:00:00.000Z","updatedAt":"2023-05-22T00:00:00.000Z","deletedAt":null}},{"id":2,"departmentId":2,"name":"조승민2","userid":"smc2","role":"staff","email":"test@gmail.com","phone":"010-1234-1234","updatedPwDate":null,"createdAt":"2023-05-23T00:00:00.000Z","updatedAt":"2023-05-23T00:00:00.000Z","deletedAt":null,"Department":{"id":2,"name":"승민","code":"2","description":"1","createdAt":"2023-05-22T00:00:00.000Z","updatedAt":"2023-05-22T00:00:00.000Z","deletedAt":null}}]}
+2023-05-23 13:16:58.005[info] app start
+2023-05-23 13:16:58.062[info] DB connection success
+2023-05-23 13:16:58.075[info] Sequelize sync success
+2023-05-23 13:17:21.163[info] (user.info.params) {"id":"1"}
+2023-05-23 13:17:21.181[debug] (userService.info) null
+2023-05-23 13:17:21.182[info] (user.info.result) null
+2023-05-23 13:17:26.158[info] (user.info.params) {"id":"2"}
+2023-05-23 13:17:26.169[debug] (userService.info) {"id":2,"departmentId":2,"name":"조승민2","userid":"smc2","password":"1234","role":"staff","email":"test@gmail.com","phone":"010-1234-1234","updatedPwDate":null,"createdAt":"2023-05-23T00:00:00.000Z","updatedAt":"2023-05-23T00:00:00.000Z","deletedAt":null,"Department":{"id":2,"name":"승민","code":"2","description":"1","createdAt":"2023-05-22T00:00:00.000Z","updatedAt":"2023-05-22T00:00:00.000Z","deletedAt":null}}
+2023-05-23 13:17:26.171[info] (user.info.result) {"id":2,"departmentId":2,"name":"조승민2","userid":"smc2","password":"1234","role":"staff","email":"test@gmail.com","phone":"010-1234-1234","updatedPwDate":null,"createdAt":"2023-05-23T00:00:00.000Z","updatedAt":"2023-05-23T00:00:00.000Z","deletedAt":null,"Department":{"id":2,"name":"승민","code":"2","description":"1","createdAt":"2023-05-22T00:00:00.000Z","updatedAt":"2023-05-22T00:00:00.000Z","deletedAt":null}}
+2023-05-23 13:17:45.309[info] app start
+2023-05-23 13:17:45.397[info] DB connection success
+2023-05-23 13:17:45.411[info] Sequelize sync success
+2023-05-23 13:17:49.025[info] (user.info.params) {"id":"2"}
+2023-05-23 13:17:49.029[error] (userService.info) SequelizeEagerLoadingError: Department is associated to User using an alias. You've included an alias (dseul), but it does not match the alias(es) defined in your association (Department).
+2023-05-23 13:17:53.682[info] app start
+2023-05-23 13:17:53.741[info] DB connection success
+2023-05-23 13:17:53.757[info] Sequelize sync success
+2023-05-23 13:20:05.208[info] app start
+2023-05-23 13:20:05.282[info] DB connection success
+2023-05-23 13:20:05.296[info] Sequelize sync success
+2023-05-23 13:20:15.047[info] app start
+2023-05-23 13:20:15.099[info] DB connection success
+2023-05-23 13:20:15.115[info] Sequelize sync success
+2023-05-23 13:20:21.021[info] (user.list.params) {"name":"조승"}
+2023-05-23 13:20:21.045[debug] (userService.list) {"count":2,"rows":[{"id":3,"departmentId":2,"name":"조승민3","userid":"smc3","role":"staff","email":"test@gmail.com","phone":"010-1234-1234","updatedPwDate":null,"createdAt":"2023-05-23T00:00:00.000Z","updatedAt":"2023-05-23T00:00:00.000Z","deletedAt":null,"Department":{"name":"승민","code":"2"}},{"id":2,"departmentId":2,"name":"조승민2","userid":"smc2","role":"staff","email":"test@gmail.com","phone":"010-1234-1234","updatedPwDate":null,"createdAt":"2023-05-23T00:00:00.000Z","updatedAt":"2023-05-23T00:00:00.000Z","deletedAt":null,"Department":{"name":"승민","code":"2"}}]}
+2023-05-23 13:20:21.046[info] (user.list.result) {"count":2,"rows":[{"id":3,"departmentId":2,"name":"조승민3","userid":"smc3","role":"staff","email":"test@gmail.com","phone":"010-1234-1234","updatedPwDate":null,"createdAt":"2023-05-23T00:00:00.000Z","updatedAt":"2023-05-23T00:00:00.000Z","deletedAt":null,"Department":{"name":"승민","code":"2"}},{"id":2,"departmentId":2,"name":"조승민2","userid":"smc2","role":"staff","email":"test@gmail.com","phone":"010-1234-1234","updatedPwDate":null,"createdAt":"2023-05-23T00:00:00.000Z","updatedAt":"2023-05-23T00:00:00.000Z","deletedAt":null,"Department":{"name":"승민","code":"2"}}]}
+2023-05-23 14:22:05.899[info] app start
+2023-05-23 14:22:05.975[info] DB connection success
+2023-05-23 14:22:05.988[info] Sequelize sync success
+2023-05-23 14:44:16.218[info] app start
+2023-05-23 14:44:16.291[info] DB connection success
+2023-05-23 14:44:16.308[info] Sequelize sync success
+2023-05-23 14:44:20.429[info] (user.reg.params) {"departmentId":3,"name":"뉴개발","userid":"kim","password":"1","role":"member","email":"[email protected]","phone":"010-1234-5678"}
+2023-05-23 14:44:20.431[debug] (userService.makePassword) "1"
+2023-05-23 14:44:20.448[error] (userService.reg) SequelizeUniqueConstraintError: Validation error
+2023-05-23 14:45:37.940[info] (user.reg.params) {"departmentId":4,"name":"뉴개발","userid":"kim","password":"1","role":"member","email":"[email protected]","phone":"010-1234-5678"}
+2023-05-23 14:45:37.943[debug] (userService.makePassword) "1"
+2023-05-23 14:45:37.956[error] (userService.reg) SequelizeUniqueConstraintError: Validation error
+2023-05-23 14:46:33.230[info] (user.reg.params) {"departmentId":4,"name":"뉴개발","userid":"kim","password":"1","role":"member","email":"[email protected]","phone":"010-1234-5678"}
+2023-05-23 14:46:33.233[debug] (userService.makePassword) "1"
+2023-05-23 14:46:33.245[error] (userService.reg) SequelizeUniqueConstraintError: Validation error
+2023-05-23 14:47:15.413[info] (user.reg.params) {"departmentId":4,"name":"뉴개발","userid":"kim","password":"a","role":"member","email":"[email protected]","phone":"010-1234-5678"}
+2023-05-23 14:47:15.415[debug] (userService.makePassword) "a"
+2023-05-23 14:47:15.423[error] (userService.reg) SequelizeUniqueConstraintError: Validation error
+2023-05-23 14:47:36.893[info] app start
+2023-05-23 14:47:36.975[info] DB connection success
+2023-05-23 14:47:36.989[info] Sequelize sync success
+2023-05-23 14:47:42.364[info] (user.reg.params) {"departmentId":4,"name":"뉴개발","userid":"kim","password":"a","role":"member","email":"[email protected]","phone":"010-1234-5678"}
+2023-05-23 14:47:42.367[debug] (userService.makePassword) "a"
+2023-05-23 14:47:42.379[error] (userService.reg) SequelizeUniqueConstraintError: Validation error
+2023-05-23 14:47:46.253[info] app start
+2023-05-23 14:47:46.311[info] DB connection success
+2023-05-23 14:47:46.326[info] Sequelize sync success
+2023-05-23 14:49:24.454[info] (user.reg.params) {"departmentId":4,"name":"뉴개발","userid":"newkim","password":"a","role":"member","email":"[email protected]","phone":"010-1234-5678"}
+2023-05-23 14:49:24.456[debug] (userService.makePassword) "a"
+2023-05-23 14:49:24.479[error] (userService.reg) SequelizeForeignKeyConstraintError: Cannot add or update a child row: a foreign key constraint fails (`metacamp_dev`.`users`, CONSTRAINT `users_ibfk_1` FOREIGN KEY (`department_id`) REFERENCES `departments` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+2023-05-23 14:49:49.333[info] (user.reg.params) {"departmentId":3,"name":"뉴개발","userid":"newkim","password":"a","role":"member","email":"[email protected]","phone":"010-1234-5678"}
+2023-05-23 14:49:49.335[debug] (userService.makePassword) "a"
+2023-05-23 14:49:49.349[debug] (userService.reg) {"id":11,"departmentId":3,"name":"뉴개발","userid":"newkim","role":"member","email":"[email protected]","phone":"010-1234-5678","updatedAt":"2023-05-23T05:49:49.336Z","createdAt":"2023-05-23T05:49:49.336Z"}
+2023-05-23 14:49:49.350[info] (user.reg.result) {"id":11,"departmentId":3,"name":"뉴개발","userid":"newkim","role":"member","email":"[email protected]","phone":"010-1234-5678","updatedAt":"2023-05-23T05:49:49.336Z","createdAt":"2023-05-23T05:49:49.336Z"}
+2023-05-23 15:11:35.850[info] app start
+2023-05-23 15:11:35.903[info] DB connection success
+2023-05-23 15:11:35.917[info] Sequelize sync success
+2023-05-23 15:16:42.222[info] app start
+2023-05-23 15:16:42.296[info] DB connection success
+2023-05-23 15:16:42.309[info] Sequelize sync success
+2023-05-23 16:08:23.387[info] app start
+2023-05-23 16:08:23.448[info] DB connection success
+2023-05-23 16:08:23.463[info] Sequelize sync success
+2023-05-23 16:08:31.107[info] (auth.token.params) {}
+2023-05-23 16:08:31.108[error] Error: Not allowed null (userid, password)
+2023-05-23 16:08:31.117[error] (userService.login) Error: WHERE parameter "userid" has invalid "undefined" value
+2023-05-23 16:09:00.449[info] (auth.token.params) {}
+2023-05-23 16:09:00.449[error] Error: Not allowed null (userid, password)
+2023-05-23 16:09:00.451[error] (userService.login) Error: WHERE parameter "userid" has invalid "undefined" value
+2023-05-23 16:11:59.567[info] (auth.token.params) {"userid":"kim","password":"1"}
+2023-05-23 16:11:59.584[debug] (userService.login) {"id":4,"userid":"kim","password":"1","name":"김개발","role":"member"}
+2023-05-23 16:11:59.586[debug] (userService.checkPassword) false
+2023-05-23 16:11:59.587[error] Error: Incorect userid or password
+2023-05-23 16:12:20.856[info] (auth.token.params) {"userid":"kim","password":1}
+2023-05-23 16:12:20.865[debug] (userService.login) {"id":4,"userid":"kim","password":"1","name":"김개발","role":"member"}
+2023-05-23 16:12:20.871[error] (userService.checkPassword) TypeError [ERR_INVALID_ARG_TYPE]: The "password" argument must be of type string or an instance of Buffer, TypedArray, or DataView. Received type number (1)
+2023-05-23 16:12:29.965[info] (auth.token.params) {"userid":"kim","password":"1"}
+2023-05-23 16:12:29.968[debug] (userService.login) {"id":4,"userid":"kim","password":"1","name":"김개발","role":"member"}
+2023-05-23 16:12:29.970[debug] (userService.checkPassword) false
+2023-05-23 16:12:29.970[error] Error: Incorect userid or password
+2023-05-23 16:14:30.296[info] (auth.token.params) {"userid":"newkim","password":"sD03KIgL3JrPSPe7EBFm8GlLgu9Ah/QOmdbmtlKdbS+U8oScuO/Z2b/LRiwrZq81LmORxSF47XtseweZHkiHCQ==.983c02583174da1e021264ea60c7594e3a5227fef9cc8244056d9505ea307ee571bfa8420cb01b3c71429b28dea664625c5a0fe0100f8c7c8cf35eedb52626cb"}
+2023-05-23 16:14:30.307[debug] (userService.login) {"id":11,"userid":"newkim","password":"sD03KIgL3JrPSPe7EBFm8GlLgu9Ah/QOmdbmtlKdbS+U8oScuO/Z2b/LRiwrZq81LmORxSF47XtseweZHkiHCQ==.983c02583174da1e021264ea60c7594e3a5227fef9cc8244056d9505ea307ee571bfa8420cb01b3c71429b28dea664625c5a0fe0100f8c7c8cf35eedb52626cb","name":"뉴개발","role":"member"}
+2023-05-23 16:14:30.308[debug] (userService.checkPassword) false
+2023-05-23 16:14:30.309[error] Error: Incorect userid or password
+2023-05-23 16:14:57.286[info] (auth.token.params) {"userid":"newkim","password":"a"}
+2023-05-23 16:14:57.299[debug] (userService.login) {"id":11,"userid":"newkim","password":"sD03KIgL3JrPSPe7EBFm8GlLgu9Ah/QOmdbmtlKdbS+U8oScuO/Z2b/LRiwrZq81LmORxSF47XtseweZHkiHCQ==.983c02583174da1e021264ea60c7594e3a5227fef9cc8244056d9505ea307ee571bfa8420cb01b3c71429b28dea664625c5a0fe0100f8c7c8cf35eedb52626cb","name":"뉴개발","role":"member"}
+2023-05-23 16:14:57.301[debug] (userService.checkPassword) true
+2023-05-23 16:14:57.302[info] (auth.token.result) {"id":11,"userid":"newkim","password":"sD03KIgL3JrPSPe7EBFm8GlLgu9Ah/QOmdbmtlKdbS+U8oScuO/Z2b/LRiwrZq81LmORxSF47XtseweZHkiHCQ==.983c02583174da1e021264ea60c7594e3a5227fef9cc8244056d9505ea307ee571bfa8420cb01b3c71429b28dea664625c5a0fe0100f8c7c8cf35eedb52626cb","name":"뉴개발","role":"member"}
+2023-05-23 16:41:21.602[info] app start
+2023-05-23 16:41:21.691[info] DB connection success
+2023-05-23 16:41:21.704[info] Sequelize sync success
+2023-05-23 16:42:22.961[info] app start
+2023-05-23 16:42:23.019[info] DB connection success
+2023-05-23 16:42:23.034[info] Sequelize sync success
+2023-05-23 16:43:07.538[info] app start
+2023-05-23 16:43:07.598[info] DB connection success
+2023-05-23 16:43:07.613[info] Sequelize sync success
+2023-05-23 16:47:32.872[info] app start
+2023-05-23 16:47:32.946[info] DB connection success
+2023-05-23 16:47:32.962[info] Sequelize sync success
+2023-05-23 16:48:58.474[info] app start
+2023-05-23 16:48:58.532[info] DB connection success
+2023-05-23 16:48:58.545[info] Sequelize sync success
+2023-05-23 16:49:33.334[info] app start
+2023-05-23 16:49:33.390[info] DB connection success
+2023-05-23 16:49:33.406[info] Sequelize sync success
+2023-05-23 16:50:06.904[info] app start
+2023-05-23 16:50:06.974[info] DB connection success
+2023-05-23 16:50:06.990[info] Sequelize sync success
+2023-05-23 16:51:30.240[info] app start
+2023-05-23 16:51:30.309[info] DB connection success
+2023-05-23 16:51:30.324[info] Sequelize sync success
+2023-05-23 16:52:31.176[info] app start
+2023-05-23 16:52:31.232[info] DB connection success
+2023-05-23 16:52:31.261[info] Sequelize sync success
+2023-05-23 16:52:54.795[error] Error: Unauthorized token(토큰없음)
+2023-05-23 16:54:36.878[info] app start
+2023-05-23 16:54:36.933[info] DB connection success
+2023-05-23 16:54:36.948[info] Sequelize sync success
+2023-05-23 16:56:37.427[info] (department.reg.params) {"name":"조승민팀10","code":"SMCTEAM10","description":"토큰수업후 테스트"}
+2023-05-23 16:56:37.457[debug] (departmentService.reg) {"id":10,"name":"조승민팀10","code":"SMCTEAM10","description":"토큰수업후 테스트","updatedAt":"2023-05-23T07:56:37.431Z","createdAt":"2023-05-23T07:56:37.431Z"}
+2023-05-23 16:56:37.458[info] (department.reg.result) {"id":10,"name":"조승민팀10","code":"SMCTEAM10","description":"토큰수업후 테스트","updatedAt":"2023-05-23T07:56:37.431Z","createdAt":"2023-05-23T07:56:37.431Z"}
+2023-05-23 17:06:02.112[info] app start
+2023-05-23 17:06:02.187[info] DB connection success
+2023-05-23 17:06:02.201[info] Sequelize sync success
+2023-05-23 17:08:40.264[info] (department.reg.params) {"name":"조승민팀11","code":"SMCTEAM11","description":"토큰갱신후 테스트"}
+2023-05-23 17:08:40.285[debug] (departmentService.reg) {"id":11,"name":"조승민팀11","code":"SMCTEAM11","description":"토큰갱신후 테스트","updatedAt":"2023-05-23T08:08:40.266Z","createdAt":"2023-05-23T08:08:40.266Z"}
+2023-05-23 17:08:40.286[info] (department.reg.result) {"id":11,"name":"조승민팀11","code":"SMCTEAM11","description":"토큰갱신후 테스트","updatedAt":"2023-05-23T08:08:40.266Z","createdAt":"2023-05-23T08:08:40.266Z"}
+2023-05-23 17:09:02.824[info] (department.reg.params) {"name":"조승민팀12","code":"SMCTEAM12","description":"토큰갱신후 테스트"}
+2023-05-23 17:09:02.849[debug] (departmentService.reg) {"id":12,"name":"조승민팀12","code":"SMCTEAM12","description":"토큰갱신후 테스트","updatedAt":"2023-05-23T08:09:02.825Z","createdAt":"2023-05-23T08:09:02.825Z"}
+2023-05-23 17:09:02.850[info] (department.reg.result) {"id":12,"name":"조승민팀12","code":"SMCTEAM12","description":"토큰갱신후 테스트","updatedAt":"2023-05-23T08:09:02.825Z","createdAt":"2023-05-23T08:09:02.825Z"}
+2023-05-23 17:25:30.726[info] app start
+2023-05-23 17:25:30.878[info] DB connection success
+2023-05-23 17:25:30.893[info] Sequelize sync success
+2023-05-23 17:25:50.445[info] (auth.token.params) {"userid":"newkim","password":"a"}
+2023-05-23 17:25:50.458[debug] (userService.login) {"id":11,"userid":"newkim","password":"sD03KIgL3JrPSPe7EBFm8GlLgu9Ah/QOmdbmtlKdbS+U8oScuO/Z2b/LRiwrZq81LmORxSF47XtseweZHkiHCQ==.983c02583174da1e021264ea60c7594e3a5227fef9cc8244056d9505ea307ee571bfa8420cb01b3c71429b28dea664625c5a0fe0100f8c7c8cf35eedb52626cb","name":"뉴개발","role":"member"}
+2023-05-23 17:25:50.461[debug] (userService.checkPassword) true
+2023-05-23 17:25:50.462[info] (auth.token.result) {"id":11,"userid":"newkim","password":"sD03KIgL3JrPSPe7EBFm8GlLgu9Ah/QOmdbmtlKdbS+U8oScuO/Z2b/LRiwrZq81LmORxSF47XtseweZHkiHCQ==.983c02583174da1e021264ea60c7594e3a5227fef9cc8244056d9505ea307ee571bfa8420cb01b3c71429b28dea664625c5a0fe0100f8c7c8cf35eedb52626cb","name":"뉴개발","role":"member"}
+2023-05-23 17:26:20.000[info] app start
+2023-05-23 17:26:20.056[info] DB connection success
+2023-05-23 17:26:20.071[info] Sequelize sync success
+2023-05-23 17:26:24.074[info] app start
+2023-05-23 17:26:24.141[info] DB connection success
+2023-05-23 17:26:24.155[info] Sequelize sync success
