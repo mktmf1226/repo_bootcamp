@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+</head>
+
+<body>
+    <div id="app"></div>
+    <h1></h1>
+    <form action="">
+        <label for="inputText">4자리 숫자를 입력하세요:</label><br />
+        <input type="text" id="inputText" />
+        <button type="submit" id="inputButton"></button>
+    </form>
+    <button id="resetButton"></button>
+    <button id="hintButton"></button>
+
+    <p id="result">입력 결과 :</p>
+    <p id="times">남은 횟수 :</p>
+    <p id="message" style="color: red;"></p>
+    <p id="seconds" style="color: green;"></p>
+    <p id="hint"></p>
+
+    
+    <script>
+        // 0. 전역변수 선언
+        let array = []; // 답
+        let strike = 0;
+        let ball = 0;
+        let count = 10; // 시도할 수 있는 기회 수
+        let history = []; // 사용자가 입력한 값 저장소
+
+        // 1. 화면구성
+        // 게임 이름
+        let title = document.querySelector('h1');
+        title.textContent = '숫자 야구 게임';
+
+        // 전송 폼
+        let form = document.querySelector('form');
+
+        // 입력창
+        let input = document.querySelector('input');
+
+        // 입력 버튼
+        let btn = document.querySelector('#inputButton');
+        btn.textContent = '입력';
+
+        // 리셋 버튼
+        let resetButton = document.querySelector('#resetButton');
+        resetButton.textContent = '리셋';
+
+        // 힌트 버튼
+        let hintButton = document.querySelector('#hintButton');
+        hintButton.textContent = '힌트';
+
+        // 결과조회
+        let result = document.querySelector('#result');
+
+        // 남은횟수
+        let times = document.querySelector('#times');
+
+        // 메세지
+        let message = document.querySelector('#message');
+
+        // 카운트 초
+        let seconds = document.querySelector('#seconds');
+
+        // 힌트
+        let hint = document.querySelector('#hint');
+
+        // 2. 입력 버튼
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            // 이하 코드 작성
+            let inputValue = input.value; // 입력한 값을 변수에 할당
+
+            // 1) 유효성검사 후 계산
+            if (validate(inputValue)) {
+                console.log('입력한 값은 : ', inputValue);
+                compare(inputValue); //계산
+                showResult(); //결과값과 남은횟수
+            } //if end
+
+            // 2) 남은 횟수가 0이고 답을 맞히지 못했을 때
+            if (count - history.length === 0 && strike !== 4) {
+                console.log('횟수 초과');
+                message.textContent = `횟수 초과!! 정답은 ${array.join('')}`;
+                setTimeout(() => {
+                    messageNotification('다음문제 시작', 3);
+                    clearAll();
+                    createArr();
+                }, 1000 * 10);
+                countSeconds(10);
+            } //if end
+
+            // 3) 답을 맞힌 경우
+            if (strike === 4) {
+                console.log('홈런!!');
+                
+                // 시도횟수
+                let trycount = history.length; // 입력한 값을 저장한 배열의 길이만큼 시도
+                const data = {"trycount":trycount};
+                //console.log('data : ',data);
+
+                // db insert 요청
+                fetch("/getDataInsert", {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(data)
+                })
+                    .then((response) => response.json())
+                    .then((data) => {
+                    //console.log(data);
+                });
+                
+                messageNotification('홈런!!', 5);
+                setTimeout(() => {
+                    messageNotification('다음문제 시작', 3);
+                    clearAll();
+                    createArr();
+                }, 5000);
+                countSeconds(5);
+            } //if end
+        });
+
+        // 3. 리셋 버튼
+        resetButton.addEventListener('click', function (e) {
+            e.preventDefault();
+            // 이하 코드 작성
+            console.log('리셋버튼 클릭');
+            messageNotification('리셋되었습니다.', 3);
+            clearAll();
+            createArr();
+        });
+
+        // 4. 힌트 버튼
+        hintButton.addEventListener('click', function (e) {
+            e.preventDefault();
+            // 이하 코드 작성
+            console.log('힌트버튼 클릭');
+            showHint();
+        });
+
+        // 5. 이하 실행할 함수들
+        // 5-1. 0~9까지의 랜덤한 숫자 4개를 뽑는 함수
+        const createArr = () => {
+            for (let i = 0; i < 4; i++) {
+                //배열 초기화
+                delete array[i];
+
+                let num = Math.floor(Math.random() * 10);
+
+                //중복이 생기면 재할당한다
+                while (array.includes(num)) {
+                    num = Math.floor(Math.random() * 10);
+                }
+
+                array[i] = num;
+            } //for end
+            console.log(`정답은 ${array}`);
+        }; //createArr() end
+
+        // 5-2. 배열 변환 후 비교 함수
+        const compare = (inputValue) => {
+            // 1) 사용자가 입력한 값을 history에 저장한다.
+            history.push(inputValue); //히스토리 저장
+            //console.log(`history : ${history}`);
+
+            // 2) 계산을 위해 배열로 변환 뒤 숫자타입으로 변환한다.
+            const try1 = Array.from(inputValue); // ["1", "2", "3", "4"]
+            const try2 = try1.map((item) => Number(item)); // [1, 2, 3, 4]
+
+            // 3) 스트라이크, 볼 초기화
+            strike = 0;
+            ball = 0;
+
+            for (let i = 0; i < array.length; i++) {
+                // 4) 스트라이크 계산
+                if (try2[i] === array[i]) {
+                    strike++;
+                }
+                // 5) 볼 계산
+                if (array.indexOf(try2[i]) !== -1) {
+                    ball++;
+                }
+            } //for end
+            if(ball >= strike){
+                ball -= strike;
+            }//if end
+        }; //compare(inputValue) end
+
+        // 5-3. 입력 result 출력
+        const showResult = () => {
+            result.textContent = `입력 결과 : ${strike} 스트라이크 / ${ball} 볼`;
+            times.textContent = `남은 횟수 : ${count - history.length}회`;
+        }; //showResult() end
+
+        // 5-4. 메세지 띄우기
+        const messageNotification = (mess, s) => {
+            message.textContent = mess;
+            setTimeout(() => {
+                message.textContent = '';
+            }, 1000 * s);
+        }; // messageNotification() end
+
+        // 5-5. 유효성 검사 함수
+        const validate = (inputValue) => {
+            inputValue = inputValue.trim();
+
+            //1) 숫자인지? 유효성 검사
+            if (isNaN(Number(inputValue)) === true) {
+                messageNotification('숫자만 입력해주세요', 2);
+                return false;
+            }
+
+            //2) 4자리인지? 유효성 검사
+            if (inputValue.length <= 3) {
+                messageNotification('3자리 이하는 불가합니다', 2);
+                return false;
+            } else if (inputValue.length > 4) {
+                messageNotification('5자리 이상은 불가합니다', 2);
+                return false;
+            }
+
+            //3) 중복인지? 유효성 검사
+            const try1 = Array.from(inputValue); // ["1", "2", "3", "4"]
+            const try2 = try1.map((item) => Number(item)); // [1, 2, 3, 4]
+            for (let i = 0; i < try2.length; i++) {
+                for (let j = 0; j < try2.length; j++) {
+                    if (i !== j && try2[i] === try2[j]) {
+                        messageNotification('중복된 숫자는 불가합니다', 2);
+                        return false;
+                    } //if end
+                } //for end
+            } //for end
+
+            return true;
+        }; //validate() end
+
+        // 5-6. s초 뒤에 시작한다는 메세지 출력
+        const countSeconds = (s) => {
+            for (let i = s; i >= 0; i--) {
+                setTimeout(() => {
+                    seconds.textContent = `${i}초 후 자동 시작`;
+                }, 1000 * (s - i));
+            }
+            setTimeout(() => {
+                seconds.textContent = '';
+            }, 1000 * (s + 1));
+        }; //countSeconds end
+
+        // 5-7. 힌트 출력 : 정답이 포함된 5개의 랜덤한 수를 내림차순으로 화면에 출력
+        const showHint = () => {
+            // 1) 정답을 복사하기
+            let hintArr = new Array(array.length);
+            for (let i = array.length - 1; i >= 0; i--) {
+                hintArr[i] = array[i];
+            }
+
+            // 2) 마지막 배열에 랜덤 수 넣기
+            let num = Math.floor(Math.random() * 10);
+            hintArr[hintArr.length] = num;
+
+            // 3) 중복이 생기면 재할당한다
+            while (array.includes(hintArr[hintArr.length - 1])) {
+                num = Math.floor(Math.random() * 10);
+                hintArr[hintArr.length - 1] = num;
+            }
+
+            // 4) 내림차순으로 정렬하기
+            hintArr.sort().reverse();
+
+            // 5) 힌트를 화면에 출력하기
+            hint.textContent = `힌트는 ${hintArr.join('')}`;
+            //console.log(`hintArr : ${hintArr}`);
+        };
+
+        // 5-8. 게임 재시작시 초기화 함수
+        const clearAll = () => {
+            // 히스토리 초기화
+            history = [];
+            //console.log(`history.length : ${history.length}`);
+
+            // 스트라이크, 볼 초기화
+            strike = 0;
+            ball = 0;
+
+            // 화면 초기화
+            input.value = ''; //기존값을 지우기 위해 빈문자열 대입
+            input.focus();
+            result.textContent = '입력 결과 :';
+            times.textContent = `남은 횟수 : ${count - history.length}회`;
+            hint.textContent = '';
+        };
+
+        //////////////////////////////////////////////////////////////////////////////////
+
+        createArr(); //게임 시작
+
+
+    </script>
+</body>
+
+</html>
