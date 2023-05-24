@@ -48,5 +48,8 @@ module.exports = class User extends Sequelize.Model {
   // onDelete: 'CASCADE' department 데이터 삭제시 연결된 user의 정보도 삭제
   static associate(db) {
     db.User.belongsTo(db.Department, { foreignKey: { name: 'departmentId', onDelete: 'SET NULL', as: 'Department' } });
+    db.User.hasMany(db.Board, { foreignKey: { name: 'UserId', onDelete: 'SET NULL', as: 'Boards' } });
   }
+
+  static includeAttributes = ['id', 'name', 'role', 'email', 'phone', 'userid'];
 };

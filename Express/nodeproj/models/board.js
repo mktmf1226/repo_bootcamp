@@ -1,20 +1,19 @@
 const Sequelize = require('sequelize');
 
-module.exports = class Department extends Sequelize.Model {
+module.exports = class Board extends Sequelize.Model {
   static init(sequelize) {
     return super.init({
-      name: {
-        type: Sequelize.STRING(100),
-        allowNull: false,
-        unique: 'department_unique',
-        comment: '부서의 이름을 입력하는 칼럼입니다.',
+      userId: {
+        type: Sequelize.INTEGER,
       },
-      code: {
+      title: {
         type: Sequelize.STRING(50),
-        unique: 'department_unique',
+        allowNull: false,
       },
-      description: {
-        type: Sequelize.TEXT,
+      active: {
+        type: Sequelize.BOOLEAN,
+        allowNull: false,
+        defaultValue: true,
       },
     }, {
       sequelize,
@@ -27,8 +26,9 @@ module.exports = class Department extends Sequelize.Model {
   }
 
   static associate(db) {
-    db.Department.hasMany(db.User, { foreignKey: { name: 'departmentId', onDelete: 'SET NULL', as: 'Users' } });
+    db.Board.belongsTo(db.User, { foreignKey: { name: 'userId', onDelete: 'SET NULL', as: 'User' } });
+    db.Board.hasMany(db.Post, { foreignKey: { name: 'boardId', onDelete: 'SET NULL', as: 'Posts' } });
   }
 
-  static includeAttributes = ['id', 'name', 'createdAt'];
+  static includeAttributes = ['id', 'active', 'title', 'createdAt'];
 };

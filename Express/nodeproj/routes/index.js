@@ -7,11 +7,19 @@ const logger = require('../lib/logger');
 
 const departmentRouter = require('./department');
 const userRouter = require('./user');
+const boardRouter = require('./board');
+const postRouter = require('./post');
+const commentRouter = require('./comment');
+const uploadRouter = require('./upload');
 
 const router = express.Router();
 
 router.use('/departments', departmentRouter);
 router.use('/users', userRouter);
+router.use('/boards', boardRouter);
+router.use('/posts', postRouter);
+router.use('/comments', commentRouter);
+router.use('/uploads', uploadRouter);
 
 /* GET home page. */
 router.get('/', (req, res, next) => {

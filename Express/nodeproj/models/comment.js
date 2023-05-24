@@ -1,19 +1,17 @@
 const Sequelize = require('sequelize');
 
-module.exports = class Department extends Sequelize.Model {
+module.exports = class Comment extends Sequelize.Model {
   static init(sequelize) {
     return super.init({
-      name: {
-        type: Sequelize.STRING(100),
+      postId: {
+        type: Sequelize.INTEGER,
         allowNull: false,
-        unique: 'department_unique',
-        comment: '부서의 이름을 입력하는 칼럼입니다.',
       },
-      code: {
-        type: Sequelize.STRING(50),
-        unique: 'department_unique',
+      userId: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
       },
-      description: {
+      content: {
         type: Sequelize.TEXT,
       },
     }, {
@@ -27,8 +25,9 @@ module.exports = class Department extends Sequelize.Model {
   }
 
   static associate(db) {
-    db.Department.hasMany(db.User, { foreignKey: { name: 'departmentId', onDelete: 'SET NULL', as: 'Users' } });
+    db.Comment.belongsTo(db.Post, { foreignKey: { name: 'postId', onDelete: 'SET NULL', as: 'Post' } });
+    db.Comment.belongsTo(db.User, { foreignKey: { name: 'userId', onDelete: 'SET NULL', as: 'User' } });
   }
 
-  static includeAttributes = ['id', 'name', 'createdAt'];
+  static includeAttributes = ['id', 'userId', 'content', 'createdAt'];
 };

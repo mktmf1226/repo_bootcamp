@@ -1,0 +1,346 @@
+2023-05-24 10:43:15.071[info] app start
+2023-05-24 10:43:15.208[info] DB connection success
+2023-05-24 10:43:15.360[info] Sequelize sync success
+2023-05-24 10:44:58.048[info] app start
+2023-05-24 10:44:58.165[info] DB connection success
+2023-05-24 10:44:58.192[info] Sequelize sync success
+2023-05-24 10:47:19.657[info] app start
+2023-05-24 10:47:19.755[info] DB connection success
+2023-05-24 10:47:19.829[info] Sequelize sync success
+2023-05-24 10:49:43.810[info] app start
+2023-05-24 10:49:43.896[info] DB connection success
+2023-05-24 10:49:43.922[info] Sequelize sync success
+2023-05-24 10:51:39.741[info] app start
+2023-05-24 10:51:39.830[info] DB connection success
+2023-05-24 10:51:39.856[info] Sequelize sync success
+2023-05-24 10:53:40.691[info] (baord.reg.params) {"title":"첫번째 게시글","active":true,"userId":"11"}
+2023-05-24 10:53:40.713[debug] (boardService.reg) {"id":1,"title":"첫번째 게시글","active":true,"userId":"11","updatedAt":"2023-05-24T01:53:40.694Z","createdAt":"2023-05-24T01:53:40.694Z"}
+2023-05-24 10:53:40.721[info] (board.reg.result) {"id":1,"title":"첫번째 게시글","active":true,"userId":"11","updatedAt":"2023-05-24T01:53:40.694Z","createdAt":"2023-05-24T01:53:40.694Z"}
+2023-05-24 10:55:14.666[info] app start
+2023-05-24 10:55:14.772[info] DB connection success
+2023-05-24 10:55:14.797[info] Sequelize sync success
+2023-05-24 10:55:40.861[info] app start
+2023-05-24 10:55:40.957[info] DB connection success
+2023-05-24 10:55:40.982[info] Sequelize sync success
+2023-05-24 10:56:46.826[info] app start
+2023-05-24 10:56:46.914[info] DB connection success
+2023-05-24 10:56:46.938[info] Sequelize sync success
+2023-05-24 11:00:49.451[info] app start
+2023-05-24 11:00:49.547[info] DB connection success
+2023-05-24 11:00:49.571[info] Sequelize sync success
+2023-05-24 11:01:02.780[info] (baord.reg.params) {"title":"두번째 게시글","active":true,"userId":"11"}
+2023-05-24 11:01:02.805[debug] (boardService.reg) {"id":2,"title":"두번째 게시글","active":true,"userId":"11","updatedAt":"2023-05-24T02:01:02.784Z","createdAt":"2023-05-24T02:01:02.784Z"}
+2023-05-24 11:01:02.807[info] (board.reg.result) {"id":2,"title":"두번째 게시글","active":true,"userId":"11","updatedAt":"2023-05-24T02:01:02.784Z","createdAt":"2023-05-24T02:01:02.784Z"}
+2023-05-24 11:01:08.728[info] (baord.reg.params) {"title":"떡볶이 마라탕","active":true,"userId":"11"}
+2023-05-24 11:01:08.737[debug] (boardService.reg) {"id":3,"title":"떡볶이 마라탕","active":true,"userId":"11","updatedAt":"2023-05-24T02:01:08.729Z","createdAt":"2023-05-24T02:01:08.729Z"}
+2023-05-24 11:01:08.738[info] (board.reg.result) {"id":3,"title":"떡볶이 마라탕","active":true,"userId":"11","updatedAt":"2023-05-24T02:01:08.729Z","createdAt":"2023-05-24T02:01:08.729Z"}
+2023-05-24 11:01:16.279[info] (baord.reg.params) {"title":"점심밥","active":true,"userId":"11"}
+2023-05-24 11:01:16.283[debug] (boardService.reg) {"id":4,"title":"점심밥","active":true,"userId":"11","updatedAt":"2023-05-24T02:01:16.280Z","createdAt":"2023-05-24T02:01:16.280Z"}
+2023-05-24 11:01:16.284[info] (board.reg.result) {"id":4,"title":"점심밥","active":true,"userId":"11","updatedAt":"2023-05-24T02:01:16.280Z","createdAt":"2023-05-24T02:01:16.280Z"}
+2023-05-24 11:03:50.867[info] app start
+2023-05-24 11:03:50.973[info] DB connection success
+2023-05-24 11:03:51.023[info] Sequelize sync success
+2023-05-24 11:06:42.317[info] app start
+2023-05-24 11:06:42.409[info] DB connection success
+2023-05-24 11:06:42.433[info] Sequelize sync success
+2023-05-24 11:07:05.742[info] (board.list.params) {"title":"번째","userId":"11"}
+2023-05-24 11:07:05.769[debug] (boardService.list) {"count":2,"rows":[{"id":2,"userId":11,"title":"두번째 게시글","active":true,"createdAt":"2023-05-24T02:01:02.000Z","updatedAt":"2023-05-24T02:01:02.000Z","deletedAt":null,"UserId":11,"User":{"name":"뉴개발","userid":"newkim","role":"member","email":"[email protected]"}},{"id":1,"userId":11,"title":"첫번째 게시글","active":true,"createdAt":"2023-05-24T01:53:40.000Z","updatedAt":"2023-05-24T01:53:40.000Z","deletedAt":null,"UserId":11,"User":{"name":"뉴개발","userid":"newkim","role":"member","email":"[email protected]"}}]}
+2023-05-24 11:07:05.771[info] (board.list.result) {"count":2,"rows":[{"id":2,"userId":11,"title":"두번째 게시글","active":true,"createdAt":"2023-05-24T02:01:02.000Z","updatedAt":"2023-05-24T02:01:02.000Z","deletedAt":null,"UserId":11,"User":{"name":"뉴개발","userid":"newkim","role":"member","email":"[email protected]"}},{"id":1,"userId":11,"title":"첫번째 게시글","active":true,"createdAt":"2023-05-24T01:53:40.000Z","updatedAt":"2023-05-24T01:53:40.000Z","deletedAt":null,"UserId":11,"User":{"name":"뉴개발","userid":"newkim","role":"member","email":"[email protected]"}}]}
+2023-05-24 11:07:42.811[info] (board.list.params) {}
+2023-05-24 11:07:42.825[debug] (boardService.list) {"count":4,"rows":[{"id":4,"userId":11,"title":"점심밥","active":true,"createdAt":"2023-05-24T02:01:16.000Z","updatedAt":"2023-05-24T02:01:16.000Z","deletedAt":null,"UserId":11,"User":{"name":"뉴개발","userid":"newkim","role":"member","email":"[email protected]"}},{"id":3,"userId":11,"title":"떡볶이 마라탕","active":true,"createdAt":"2023-05-24T02:01:08.000Z","updatedAt":"2023-05-24T02:01:08.000Z","deletedAt":null,"UserId":11,"User":{"name":"뉴개발","userid":"newkim","role":"member","email":"[email protected]"}},{"id":2,"userId":11,"title":"두번째 게시글","active":true,"createdAt":"2023-05-24T02:01:02.000Z","updatedAt":"2023-05-24T02:01:02.000Z","deletedAt":null,"UserId":11,"User":{"name":"뉴개발","userid":"newkim","role":"member","email":"[email protected]"}},{"id":1,"userId":11,"title":"첫번째 게시글","active":true,"createdAt":"2023-05-24T01:53:40.000Z","updatedAt":"2023-05-24T01:53:40.000Z","deletedAt":null,"UserId":11,"User":{"name":"뉴개발","userid":"newkim","role":"member","email":"[email protected]"}}]}
+2023-05-24 11:07:42.827[info] (board.list.result) {"count":4,"rows":[{"id":4,"userId":11,"title":"점심밥","active":true,"createdAt":"2023-05-24T02:01:16.000Z","updatedAt":"2023-05-24T02:01:16.000Z","deletedAt":null,"UserId":11,"User":{"name":"뉴개발","userid":"newkim","role":"member","email":"[email protected]"}},{"id":3,"userId":11,"title":"떡볶이 마라탕","active":true,"createdAt":"2023-05-24T02:01:08.000Z","updatedAt":"2023-05-24T02:01:08.000Z","deletedAt":null,"UserId":11,"User":{"name":"뉴개발","userid":"newkim","role":"member","email":"[email protected]"}},{"id":2,"userId":11,"title":"두번째 게시글","active":true,"createdAt":"2023-05-24T02:01:02.000Z","updatedAt":"2023-05-24T02:01:02.000Z","deletedAt":null,"UserId":11,"User":{"name":"뉴개발","userid":"newkim","role":"member","email":"[email protected]"}},{"id":1,"userId":11,"title":"첫번째 게시글","active":true,"createdAt":"2023-05-24T01:53:40.000Z","updatedAt":"2023-05-24T01:53:40.000Z","deletedAt":null,"UserId":11,"User":{"name":"뉴개발","userid":"newkim","role":"member","email":"[email protected]"}}]}
+2023-05-24 11:07:53.673[info] (board.info.params) {"id":"1"}
+2023-05-24 11:07:53.674[error] (boardService.info) TypeError: boardDao.selectInfo is not a function
+2023-05-24 11:08:37.398[info] app start
+2023-05-24 11:08:37.486[info] DB connection success
+2023-05-24 11:08:37.512[info] Sequelize sync success
+2023-05-24 11:08:40.706[info] (board.info.params) {"id":"1"}
+2023-05-24 11:08:40.707[error] (boardService.info) ReferenceError: Department is not defined
+2023-05-24 11:08:48.091[info] app start
+2023-05-24 11:08:48.208[info] DB connection success
+2023-05-24 11:08:48.233[info] Sequelize sync success
+2023-05-24 11:08:50.792[info] (board.info.params) {"id":"1"}
+2023-05-24 11:08:50.803[debug] (boardService.info) {"id":1,"userId":11,"title":"첫번째 게시글","active":true,"createdAt":"2023-05-24T01:53:40.000Z","updatedAt":"2023-05-24T01:53:40.000Z","deletedAt":null,"UserId":11}
+2023-05-24 11:08:50.804[info] (board.info.result) {"id":1,"userId":11,"title":"첫번째 게시글","active":true,"createdAt":"2023-05-24T01:53:40.000Z","updatedAt":"2023-05-24T01:53:40.000Z","deletedAt":null,"UserId":11}
+2023-05-24 11:08:55.454[info] (board.info.params) {"id":"2"}
+2023-05-24 11:08:55.458[debug] (boardService.info) {"id":2,"userId":11,"title":"두번째 게시글","active":true,"createdAt":"2023-05-24T02:01:02.000Z","updatedAt":"2023-05-24T02:01:02.000Z","deletedAt":null,"UserId":11}
+2023-05-24 11:08:55.459[info] (board.info.result) {"id":2,"userId":11,"title":"두번째 게시글","active":true,"createdAt":"2023-05-24T02:01:02.000Z","updatedAt":"2023-05-24T02:01:02.000Z","deletedAt":null,"UserId":11}
+2023-05-24 11:10:09.025[info] (board.update.params) {"id":"4","title":"저녁밥","active":false}
+2023-05-24 11:10:09.053[debug] (boardService.edit) {"updatedCount":1}
+2023-05-24 11:10:09.054[info] (board.update.result) {"updatedCount":1}
+2023-05-24 11:10:28.990[info] (baord.reg.params) {"title":"삭제할거","active":true,"userId":"11"}
+2023-05-24 11:10:29.014[debug] (boardService.reg) {"id":5,"title":"삭제할거","active":true,"userId":"11","updatedAt":"2023-05-24T02:10:28.993Z","createdAt":"2023-05-24T02:10:28.993Z"}
+2023-05-24 11:10:29.015[info] (board.reg.result) {"id":5,"title":"삭제할거","active":true,"userId":"11","updatedAt":"2023-05-24T02:10:28.993Z","createdAt":"2023-05-24T02:10:28.993Z"}
+2023-05-24 11:11:14.417[info] (board.delete.params) {"id":"5"}
+2023-05-24 11:11:14.435[debug] (boardService.delete) {"deletedCount":1}
+2023-05-24 11:11:14.436[info] (board.delete.result) {"deletedCount":1}
+2023-05-24 11:11:23.626[info] (baord.reg.params) {"title":"삭제할거","active":true,"userId":"11"}
+2023-05-24 11:11:23.636[debug] (boardService.reg) {"id":6,"title":"삭제할거","active":true,"userId":"11","updatedAt":"2023-05-24T02:11:23.627Z","createdAt":"2023-05-24T02:11:23.627Z"}
+2023-05-24 11:11:23.638[info] (board.reg.result) {"id":6,"title":"삭제할거","active":true,"userId":"11","updatedAt":"2023-05-24T02:11:23.627Z","createdAt":"2023-05-24T02:11:23.627Z"}
+2023-05-24 11:11:59.079[info] (board.delete.params) {"id":"6"}
+2023-05-24 11:11:59.092[debug] (boardService.delete) {"deletedCount":1}
+2023-05-24 11:11:59.092[info] (board.delete.result) {"deletedCount":1}
+2023-05-24 13:03:48.198[info] app start
+2023-05-24 13:03:48.319[info] DB connection success
+2023-05-24 13:03:48.344[info] Sequelize sync success
+2023-05-24 13:06:15.449[info] app start
+2023-05-24 13:06:15.538[info] DB connection success
+2023-05-24 13:06:15.563[info] Sequelize sync success
+2023-05-24 13:06:44.906[info] app start
+2023-05-24 13:06:45.006[info] DB connection success
+2023-05-24 13:06:45.042[info] Sequelize sync success
+2023-05-24 13:06:54.361[info] app start
+2023-05-24 13:06:54.458[info] DB connection success
+2023-05-24 13:06:54.485[info] Sequelize sync success
+2023-05-24 14:31:14.359[info] app start
+2023-05-24 14:31:14.513[info] DB connection success
+2023-05-24 14:31:14.530[info] Sequelize sync success
+2023-05-24 14:32:27.377[info] app start
+2023-05-24 14:32:27.471[info] DB connection success
+2023-05-24 14:32:27.495[info] Sequelize sync success
+2023-05-24 14:34:03.817[info] app start
+2023-05-24 14:34:03.904[info] DB connection success
+2023-05-24 14:34:03.971[info] Sequelize sync success
+2023-05-24 14:34:25.855[info] app start
+2023-05-24 14:34:25.943[info] DB connection success
+2023-05-24 14:34:25.977[info] Sequelize sync success
+2023-05-24 14:34:37.207[info] app start
+2023-05-24 14:34:37.294[info] DB connection success
+2023-05-24 14:34:37.326[info] Sequelize sync success
+2023-05-24 14:36:23.901[info] app start
+2023-05-24 14:36:23.993[info] DB connection success
+2023-05-24 14:36:24.024[info] Sequelize sync success
+2023-05-24 14:36:35.533[info] app start
+2023-05-24 14:36:35.620[info] DB connection success
+2023-05-24 14:36:35.663[info] Sequelize sync success
+2023-05-24 14:38:12.155[info] app start
+2023-05-24 14:38:12.245[info] DB connection success
+2023-05-24 14:38:12.301[info] Sequelize sync success
+2023-05-24 14:38:18.242[info] (post.reg.params) {"boardId":"1","title":"어떤 글로 시작해야할지..","content":"이 편지는 영국에서 시작되어....","userId":"11"}
+2023-05-24 14:38:18.261[debug] (postService.reg) {"viewCount":0,"id":1,"boardId":"1","title":"어떤 글로 시작해야할지..","content":"이 편지는 영국에서 시작되어....","userId":"11","updatedAt":"2023-05-24T05:38:18.245Z","createdAt":"2023-05-24T05:38:18.245Z"}
+2023-05-24 14:38:18.263[info] (post.reg.result) {"viewCount":0,"id":1,"boardId":"1","title":"어떤 글로 시작해야할지..","content":"이 편지는 영국에서 시작되어....","userId":"11","updatedAt":"2023-05-24T05:38:18.245Z","createdAt":"2023-05-24T05:38:18.245Z"}
+2023-05-24 14:38:54.365[info] (post.reg.params) {"boardId":"1","title":"2어떤 글로 시작해야할지..","content":"2이 편지는 영국에서 시작되어....","userId":"11"}
+2023-05-24 14:38:54.379[debug] (postService.reg) {"viewCount":0,"id":2,"boardId":"1","title":"2어떤 글로 시작해야할지..","content":"2이 편지는 영국에서 시작되어....","userId":"11","updatedAt":"2023-05-24T05:38:54.366Z","createdAt":"2023-05-24T05:38:54.366Z"}
+2023-05-24 14:38:54.379[info] (post.reg.result) {"viewCount":0,"id":2,"boardId":"1","title":"2어떤 글로 시작해야할지..","content":"2이 편지는 영국에서 시작되어....","userId":"11","updatedAt":"2023-05-24T05:38:54.366Z","createdAt":"2023-05-24T05:38:54.366Z"}
+2023-05-24 14:38:58.746[info] (post.reg.params) {"boardId":"1","title":"3어떤 글로 시작해야할지..","content":"3이 편지는 영국에서 시작되어....","userId":"11"}
+2023-05-24 14:38:58.755[debug] (postService.reg) {"viewCount":0,"id":3,"boardId":"1","title":"3어떤 글로 시작해야할지..","content":"3이 편지는 영국에서 시작되어....","userId":"11","updatedAt":"2023-05-24T05:38:58.747Z","createdAt":"2023-05-24T05:38:58.747Z"}
+2023-05-24 14:38:58.757[info] (post.reg.result) {"viewCount":0,"id":3,"boardId":"1","title":"3어떤 글로 시작해야할지..","content":"3이 편지는 영국에서 시작되어....","userId":"11","updatedAt":"2023-05-24T05:38:58.747Z","createdAt":"2023-05-24T05:38:58.747Z"}
+2023-05-24 14:39:04.745[info] (post.reg.params) {"boardId":"1","title":"4어떤 글로 시작해야할지..","content":"4이 편지는 영국에서 시작되어....","userId":"11"}
+2023-05-24 14:39:04.755[debug] (postService.reg) {"viewCount":0,"id":4,"boardId":"1","title":"4어떤 글로 시작해야할지..","content":"4이 편지는 영국에서 시작되어....","userId":"11","updatedAt":"2023-05-24T05:39:04.746Z","createdAt":"2023-05-24T05:39:04.746Z"}
+2023-05-24 14:39:04.756[info] (post.reg.result) {"viewCount":0,"id":4,"boardId":"1","title":"4어떤 글로 시작해야할지..","content":"4이 편지는 영국에서 시작되어....","userId":"11","updatedAt":"2023-05-24T05:39:04.746Z","createdAt":"2023-05-24T05:39:04.746Z"}
+2023-05-24 14:39:26.718[info] (post.reg.params) {"boardId":"2","title":"숨바꼭질","content":"나무 뒤에 숨었다","userId":"11"}
+2023-05-24 14:39:26.728[debug] (postService.reg) {"viewCount":0,"id":5,"boardId":"2","title":"숨바꼭질","content":"나무 뒤에 숨었다","userId":"11","updatedAt":"2023-05-24T05:39:26.719Z","createdAt":"2023-05-24T05:39:26.719Z"}
+2023-05-24 14:39:26.729[info] (post.reg.result) {"viewCount":0,"id":5,"boardId":"2","title":"숨바꼭질","content":"나무 뒤에 숨었다","userId":"11","updatedAt":"2023-05-24T05:39:26.719Z","createdAt":"2023-05-24T05:39:26.719Z"}
+2023-05-24 14:39:43.521[info] (post.reg.params) {"boardId":"2","title":"2숨바꼭질","content":"철봉 뒤에 숨었다","userId":"11"}
+2023-05-24 14:39:43.537[debug] (postService.reg) {"viewCount":0,"id":6,"boardId":"2","title":"2숨바꼭질","content":"철봉 뒤에 숨었다","userId":"11","updatedAt":"2023-05-24T05:39:43.522Z","createdAt":"2023-05-24T05:39:43.522Z"}
+2023-05-24 14:39:43.538[info] (post.reg.result) {"viewCount":0,"id":6,"boardId":"2","title":"2숨바꼭질","content":"철봉 뒤에 숨었다","userId":"11","updatedAt":"2023-05-24T05:39:43.522Z","createdAt":"2023-05-24T05:39:43.522Z"}
+2023-05-24 14:39:55.811[info] (post.reg.params) {"boardId":"2","title":"3숨바꼭질","content":"구름 뒤에 숨었다","userId":"11"}
+2023-05-24 14:39:55.823[debug] (postService.reg) {"viewCount":0,"id":7,"boardId":"2","title":"3숨바꼭질","content":"구름 뒤에 숨었다","userId":"11","updatedAt":"2023-05-24T05:39:55.812Z","createdAt":"2023-05-24T05:39:55.812Z"}
+2023-05-24 14:39:55.824[info] (post.reg.result) {"viewCount":0,"id":7,"boardId":"2","title":"3숨바꼭질","content":"구름 뒤에 숨었다","userId":"11","updatedAt":"2023-05-24T05:39:55.812Z","createdAt":"2023-05-24T05:39:55.812Z"}
+2023-05-24 14:40:21.187[info] (post.reg.params) {"boardId":"3","title":"오늘 추천메뉴는 사천마라탕","content":"사천마라탕 만사천오백원","userId":"11"}
+2023-05-24 14:40:21.201[debug] (postService.reg) {"viewCount":0,"id":8,"boardId":"3","title":"오늘 추천메뉴는 사천마라탕","content":"사천마라탕 만사천오백원","userId":"11","updatedAt":"2023-05-24T05:40:21.188Z","createdAt":"2023-05-24T05:40:21.188Z"}
+2023-05-24 14:40:21.202[info] (post.reg.result) {"viewCount":0,"id":8,"boardId":"3","title":"오늘 추천메뉴는 사천마라탕","content":"사천마라탕 만사천오백원","userId":"11","updatedAt":"2023-05-24T05:40:21.188Z","createdAt":"2023-05-24T05:40:21.188Z"}
+2023-05-24 14:40:29.924[info] (post.reg.params) {"boardId":"3","title":"4오늘 추천메뉴는 사천마라탕","content":"4사천마라탕 만사천오백원","userId":"11"}
+2023-05-24 14:40:29.934[debug] (postService.reg) {"viewCount":0,"id":9,"boardId":"3","title":"4오늘 추천메뉴는 사천마라탕","content":"4사천마라탕 만사천오백원","userId":"11","updatedAt":"2023-05-24T05:40:29.926Z","createdAt":"2023-05-24T05:40:29.926Z"}
+2023-05-24 14:40:29.935[info] (post.reg.result) {"viewCount":0,"id":9,"boardId":"3","title":"4오늘 추천메뉴는 사천마라탕","content":"4사천마라탕 만사천오백원","userId":"11","updatedAt":"2023-05-24T05:40:29.926Z","createdAt":"2023-05-24T05:40:29.926Z"}
+2023-05-24 14:40:34.586[info] (post.reg.params) {"boardId":"3","title":"5오늘 추천메뉴는 사천마라탕","content":"5사천마라탕 만사천오백원","userId":"11"}
+2023-05-24 14:40:34.597[debug] (postService.reg) {"viewCount":0,"id":10,"boardId":"3","title":"5오늘 추천메뉴는 사천마라탕","content":"5사천마라탕 만사천오백원","userId":"11","updatedAt":"2023-05-24T05:40:34.588Z","createdAt":"2023-05-24T05:40:34.588Z"}
+2023-05-24 14:40:34.598[info] (post.reg.result) {"viewCount":0,"id":10,"boardId":"3","title":"5오늘 추천메뉴는 사천마라탕","content":"5사천마라탕 만사천오백원","userId":"11","updatedAt":"2023-05-24T05:40:34.588Z","createdAt":"2023-05-24T05:40:34.588Z"}
+2023-05-24 14:41:13.174[info] (post.list.params) {"title":"1","content":"1","userIds":null}
+2023-05-24 14:41:13.196[debug] (postService.list) {"count":0,"rows":[]}
+2023-05-24 14:41:13.197[info] (post.list.result) {"count":0,"rows":[]}
+2023-05-24 14:41:19.310[info] (post.list.params) {"content":"1","userIds":null}
+2023-05-24 14:41:19.319[debug] (postService.list) {"count":0,"rows":[]}
+2023-05-24 14:41:19.320[info] (post.list.result) {"count":0,"rows":[]}
+2023-05-24 14:41:22.132[info] (post.list.params) {"title":"1","userIds":null}
+2023-05-24 14:41:22.145[debug] (postService.list) {"count":0,"rows":[]}
+2023-05-24 14:41:22.146[info] (post.list.result) {"count":0,"rows":[]}
+2023-05-24 14:41:54.304[info] (post.list.params) {"title":"","userIds":null}
+2023-05-24 14:41:54.318[debug] (postService.list) {"count":10,"rows":[{"id":10,"boardId":3,"userId":11,"title":"5오늘 추천메뉴는 사천마라탕","content":"5사천마라탕 만사천오백원","viewCount":0,"imagePath":null,"filePath":null,"createdAt":"2023-05-24T05:40:34.000Z","updatedAt":"2023-05-24T05:40:34.000Z","deletedAt":null,"User":{"id":11,"name":"뉴개발","role":"member","email":"[email protected]","phone":"010-1234-5678","userid":"newkim"}},{"id":9,"boardId":3,"userId":11,"title":"4오늘 추천메뉴는 사천마라탕","content":"4사천마라탕 만사천오백원","viewCount":0,"imagePath":null,"filePath":null,"createdAt":"2023-05-24T05:40:29.000Z","updatedAt":"2023-05-24T05:40:29.000Z","deletedAt":null,"User":{"id":11,"name":"뉴개발","role":"member","email":"[email protected]","phone":"010-1234-5678","userid":"newkim"}},{"id":8,"boardId":3,"userId":11,"title":"오늘 추천메뉴는 사천마라탕","content":"사천마라탕 만사천오백원","viewCount":0,"imagePath":null,"filePath":null,"createdAt":"2023-05-24T05:40:21.000Z","updatedAt":"2023-05-24T05:40:21.000Z","deletedAt":null,"User":{"id":11,"name":"뉴개발","role":"member","email":"[email protected]","phone":"010-1234-5678","userid":"newkim"}},{"id":7,"boardId":2,"userId":11,"title":"3숨바꼭질","content":"구름 뒤에 숨었다","viewCount":0,"imagePath":null,"filePath":null,"createdAt":"2023-05-24T05:39:55.000Z","updatedAt":"2023-05-24T05:39:55.000Z","deletedAt":null,"User":{"id":11,"name":"뉴개발","role":"member","email":"[email protected]","phone":"010-1234-5678","userid":"newkim"}},{"id":6,"boardId":2,"userId":11,"title":"2숨바꼭질","content":"철봉 뒤에 숨었다","viewCount":0,"imagePath":null,"filePath":null,"createdAt":"2023-05-24T05:39:43.000Z","updatedAt":"2023-05-24T05:39:43.000Z","deletedAt":null,"User":{"id":11,"name":"뉴개발","role":"member","email":"[email protected]","phone":"010-1234-5678","userid":"newkim"}},{"id":5,"boardId":2,"userId":11,"title":"숨바꼭질","content":"나무 뒤에 숨었다","viewCount":0,"imagePath":null,"filePath":null,"createdAt":"2023-05-24T05:39:26.000Z","updatedAt":"2023-05-24T05:39:26.000Z","deletedAt":null,"User":{"id":11,"name":"뉴개발","role":"member","email":"[email protected]","phone":"010-1234-5678","userid":"newkim"}},{"id":4,"boardId":1,"userId":11,"title":"4어떤 글로 시작해야할지..","content":"4이 편지는 영국에서 시작되어....","viewCount":0,"imagePath":null,"filePath":null,"createdAt":"2023-05-24T05:39:04.000Z","updatedAt":"2023-05-24T05:39:04.000Z","deletedAt":null,"User":{"id":11,"name":"뉴개발","role":"member","email":"[email protected]","phone":"010-1234-5678","userid":"newkim"}},{"id":3,"boardId":1,"userId":11,"title":"3어떤 글로 시작해야할지..","content":"3이 편지는 영국에서 시작되어....","viewCount":0,"imagePath":null,"filePath":null,"createdAt":"2023-05-24T05:38:58.000Z","updatedAt":"2023-05-24T05:38:58.000Z","deletedAt":null,"User":{"id":11,"name":"뉴개발","role":"member","email":"[email protected]","phone":"010-1234-5678","userid":"newkim"}},{"id":2,"boardId":1,"userId":11,"title":"2어떤 글로 시작해야할지..","content":"2이 편지는 영국에서 시작되어....","viewCount":0,"imagePath":null,"filePath":null,"createdAt":"2023-05-24T05:38:54.000Z","updatedAt":"2023-05-24T05:38:54.000Z","deletedAt":null,"User":{"id":11,"name":"뉴개발","role":"member","email":"[email protected]","phone":"010-1234-5678","userid":"newkim"}},{"id":1,"boardId":1,"userId":11,"title":"어떤 글로 시작해야할지..","content":"이 편지는 영국에서 시작되어....","viewCount":0,"imagePath":null,"filePath":null,"createdAt":"2023-05-24T05:38:18.000Z","updatedAt":"2023-05-24T05:38:18.000Z","deletedAt":null,"User":{"id":11,"name":"뉴개발","role":"member","email":"[email protected]","phone":"010-1234-5678","userid":"newkim"}}]}
+2023-05-24 14:41:54.322[info] (post.list.result) {"count":10,"rows":[{"id":10,"boardId":3,"userId":11,"title":"5오늘 추천메뉴는 사천마라탕","content":"5사천마라탕 만사천오백원","viewCount":0,"imagePath":null,"filePath":null,"createdAt":"2023-05-24T05:40:34.000Z","updatedAt":"2023-05-24T05:40:34.000Z","deletedAt":null,"User":{"id":11,"name":"뉴개발","role":"member","email":"[email protected]","phone":"010-1234-5678","userid":"newkim"}},{"id":9,"boardId":3,"userId":11,"title":"4오늘 추천메뉴는 사천마라탕","content":"4사천마라탕 만사천오백원","viewCount":0,"imagePath":null,"filePath":null,"createdAt":"2023-05-24T05:40:29.000Z","updatedAt":"2023-05-24T05:40:29.000Z","deletedAt":null,"User":{"id":11,"name":"뉴개발","role":"member","email":"[email protected]","phone":"010-1234-5678","userid":"newkim"}},{"id":8,"boardId":3,"userId":11,"title":"오늘 추천메뉴는 사천마라탕","content":"사천마라탕 만사천오백원","viewCount":0,"imagePath":null,"filePath":null,"createdAt":"2023-05-24T05:40:21.000Z","updatedAt":"2023-05-24T05:40:21.000Z","deletedAt":null,"User":{"id":11,"name":"뉴개발","role":"member","email":"[email protected]","phone":"010-1234-5678","userid":"newkim"}},{"id":7,"boardId":2,"userId":11,"title":"3숨바꼭질","content":"구름 뒤에 숨었다","viewCount":0,"imagePath":null,"filePath":null,"createdAt":"2023-05-24T05:39:55.000Z","updatedAt":"2023-05-24T05:39:55.000Z","deletedAt":null,"User":{"id":11,"name":"뉴개발","role":"member","email":"[email protected]","phone":"010-1234-5678","userid":"newkim"}},{"id":6,"boardId":2,"userId":11,"title":"2숨바꼭질","content":"철봉 뒤에 숨었다","viewCount":0,"imagePath":null,"filePath":null,"createdAt":"2023-05-24T05:39:43.000Z","updatedAt":"2023-05-24T05:39:43.000Z","deletedAt":null,"User":{"id":11,"name":"뉴개발","role":"member","email":"[email protected]","phone":"010-1234-5678","userid":"newkim"}},{"id":5,"boardId":2,"userId":11,"title":"숨바꼭질","content":"나무 뒤에 숨었다","viewCount":0,"imagePath":null,"filePath":null,"createdAt":"2023-05-24T05:39:26.000Z","updatedAt":"2023-05-24T05:39:26.000Z","deletedAt":null,"User":{"id":11,"name":"뉴개발","role":"member","email":"[email protected]","phone":"010-1234-5678","userid":"newkim"}},{"id":4,"boardId":1,"userId":11,"title":"4어떤 글로 시작해야할지..","content":"4이 편지는 영국에서 시작되어....","viewCount":0,"imagePath":null,"filePath":null,"createdAt":"2023-05-24T05:39:04.000Z","updatedAt":"2023-05-24T05:39:04.000Z","deletedAt":null,"User":{"id":11,"name":"뉴개발","role":"member","email":"[email protected]","phone":"010-1234-5678","userid":"newkim"}},{"id":3,"boardId":1,"userId":11,"title":"3어떤 글로 시작해야할지..","content":"3이 편지는 영국에서 시작되어....","viewCount":0,"imagePath":null,"filePath":null,"createdAt":"2023-05-24T05:38:58.000Z","updatedAt":"2023-05-24T05:38:58.000Z","deletedAt":null,"User":{"id":11,"name":"뉴개발","role":"member","email":"[email protected]","phone":"010-1234-5678","userid":"newkim"}},{"id":2,"boardId":1,"userId":11,"title":"2어떤 글로 시작해야할지..","content":"2이 편지는 영국에서 시작되어....","viewCount":0,"imagePath":null,"filePath":null,"createdAt":"2023-05-24T05:38:54.000Z","updatedAt":"2023-05-24T05:38:54.000Z","deletedAt":null,"User":{"id":11,"name":"뉴개발","role":"member","email":"[email protected]","phone":"010-1234-5678","userid":"newkim"}},{"id":1,"boardId":1,"userId":11,"title":"어떤 글로 시작해야할지..","content":"이 편지는 영국에서 시작되어....","viewCount":0,"imagePath":null,"filePath":null,"createdAt":"2023-05-24T05:38:18.000Z","updatedAt":"2023-05-24T05:38:18.000Z","deletedAt":null,"User":{"id":11,"name":"뉴개발","role":"member","email":"[email protected]","phone":"010-1234-5678","userid":"newkim"}}]}
+2023-05-24 14:42:12.332[info] (post.list.params) {"title":"글","userIds":null}
+2023-05-24 14:42:12.347[debug] (postService.list) {"count":4,"rows":[{"id":4,"boardId":1,"userId":11,"title":"4어떤 글로 시작해야할지..","content":"4이 편지는 영국에서 시작되어....","viewCount":0,"imagePath":null,"filePath":null,"createdAt":"2023-05-24T05:39:04.000Z","updatedAt":"2023-05-24T05:39:04.000Z","deletedAt":null,"User":{"id":11,"name":"뉴개발","role":"member","email":"[email protected]","phone":"010-1234-5678","userid":"newkim"}},{"id":3,"boardId":1,"userId":11,"title":"3어떤 글로 시작해야할지..","content":"3이 편지는 영국에서 시작되어....","viewCount":0,"imagePath":null,"filePath":null,"createdAt":"2023-05-24T05:38:58.000Z","updatedAt":"2023-05-24T05:38:58.000Z","deletedAt":null,"User":{"id":11,"name":"뉴개발","role":"member","email":"[email protected]","phone":"010-1234-5678","userid":"newkim"}},{"id":2,"boardId":1,"userId":11,"title":"2어떤 글로 시작해야할지..","content":"2이 편지는 영국에서 시작되어....","viewCount":0,"imagePath":null,"filePath":null,"createdAt":"2023-05-24T05:38:54.000Z","updatedAt":"2023-05-24T05:38:54.000Z","deletedAt":null,"User":{"id":11,"name":"뉴개발","role":"member","email":"[email protected]","phone":"010-1234-5678","userid":"newkim"}},{"id":1,"boardId":1,"userId":11,"title":"어떤 글로 시작해야할지..","content":"이 편지는 영국에서 시작되어....","viewCount":0,"imagePath":null,"filePath":null,"createdAt":"2023-05-24T05:38:18.000Z","updatedAt":"2023-05-24T05:38:18.000Z","deletedAt":null,"User":{"id":11,"name":"뉴개발","role":"member","email":"[email protected]","phone":"010-1234-5678","userid":"newkim"}}]}
+2023-05-24 14:42:12.349[info] (post.list.result) {"count":4,"rows":[{"id":4,"boardId":1,"userId":11,"title":"4어떤 글로 시작해야할지..","content":"4이 편지는 영국에서 시작되어....","viewCount":0,"imagePath":null,"filePath":null,"createdAt":"2023-05-24T05:39:04.000Z","updatedAt":"2023-05-24T05:39:04.000Z","deletedAt":null,"User":{"id":11,"name":"뉴개발","role":"member","email":"[email protected]","phone":"010-1234-5678","userid":"newkim"}},{"id":3,"boardId":1,"userId":11,"title":"3어떤 글로 시작해야할지..","content":"3이 편지는 영국에서 시작되어....","viewCount":0,"imagePath":null,"filePath":null,"createdAt":"2023-05-24T05:38:58.000Z","updatedAt":"2023-05-24T05:38:58.000Z","deletedAt":null,"User":{"id":11,"name":"뉴개발","role":"member","email":"[email protected]","phone":"010-1234-5678","userid":"newkim"}},{"id":2,"boardId":1,"userId":11,"title":"2어떤 글로 시작해야할지..","content":"2이 편지는 영국에서 시작되어....","viewCount":0,"imagePath":null,"filePath":null,"createdAt":"2023-05-24T05:38:54.000Z","updatedAt":"2023-05-24T05:38:54.000Z","deletedAt":null,"User":{"id":11,"name":"뉴개발","role":"member","email":"[email protected]","phone":"010-1234-5678","userid":"newkim"}},{"id":1,"boardId":1,"userId":11,"title":"어떤 글로 시작해야할지..","content":"이 편지는 영국에서 시작되어....","viewCount":0,"imagePath":null,"filePath":null,"createdAt":"2023-05-24T05:38:18.000Z","updatedAt":"2023-05-24T05:38:18.000Z","deletedAt":null,"User":{"id":11,"name":"뉴개발","role":"member","email":"[email protected]","phone":"010-1234-5678","userid":"newkim"}}]}
+2023-05-24 14:43:35.202[info] (post.list.params) {"content":"나무","userIds":null}
+2023-05-24 14:43:35.214[debug] (postService.list) {"count":1,"rows":[{"id":5,"boardId":2,"userId":11,"title":"숨바꼭질","content":"나무 뒤에 숨었다","viewCount":0,"imagePath":null,"filePath":null,"createdAt":"2023-05-24T05:39:26.000Z","updatedAt":"2023-05-24T05:39:26.000Z","deletedAt":null,"User":{"id":11,"name":"뉴개발","role":"member","email":"[email protected]","phone":"010-1234-5678","userid":"newkim"}}]}
+2023-05-24 14:43:35.215[info] (post.list.result) {"count":1,"rows":[{"id":5,"boardId":2,"userId":11,"title":"숨바꼭질","content":"나무 뒤에 숨었다","viewCount":0,"imagePath":null,"filePath":null,"createdAt":"2023-05-24T05:39:26.000Z","updatedAt":"2023-05-24T05:39:26.000Z","deletedAt":null,"User":{"id":11,"name":"뉴개발","role":"member","email":"[email protected]","phone":"010-1234-5678","userid":"newkim"}}]}
+2023-05-24 14:44:34.273[info] (post.reg.params) {"boardId":"3","title":"5오늘 추천메뉴는 사천마라탕","content":"5사천마라탕 만사천오백원","imagePath":"5maratang.png","userId":"11"}
+2023-05-24 14:44:34.284[debug] (postService.reg) {"viewCount":0,"id":11,"boardId":"3","title":"5오늘 추천메뉴는 사천마라탕","content":"5사천마라탕 만사천오백원","imagePath":"5maratang.png","userId":"11","updatedAt":"2023-05-24T05:44:34.276Z","createdAt":"2023-05-24T05:44:34.276Z"}
+2023-05-24 14:44:34.285[info] (post.reg.result) {"viewCount":0,"id":11,"boardId":"3","title":"5오늘 추천메뉴는 사천마라탕","content":"5사천마라탕 만사천오백원","imagePath":"5maratang.png","userId":"11","updatedAt":"2023-05-24T05:44:34.276Z","createdAt":"2023-05-24T05:44:34.276Z"}
+2023-05-24 14:44:42.746[info] (post.list.params) {"content":"5","userIds":null}
+2023-05-24 14:44:42.755[debug] (postService.list) {"count":2,"rows":[{"id":11,"boardId":3,"userId":11,"title":"5오늘 추천메뉴는 사천마라탕","content":"5사천마라탕 만사천오백원","viewCount":0,"imagePath":"5maratang.png","filePath":null,"createdAt":"2023-05-24T05:44:34.000Z","updatedAt":"2023-05-24T05:44:34.000Z","deletedAt":null,"User":{"id":11,"name":"뉴개발","role":"member","email":"[email protected]","phone":"010-1234-5678","userid":"newkim"}},{"id":10,"boardId":3,"userId":11,"title":"5오늘 추천메뉴는 사천마라탕","content":"5사천마라탕 만사천오백원","viewCount":0,"imagePath":null,"filePath":null,"createdAt":"2023-05-24T05:40:34.000Z","updatedAt":"2023-05-24T05:40:34.000Z","deletedAt":null,"User":{"id":11,"name":"뉴개발","role":"member","email":"[email protected]","phone":"010-1234-5678","userid":"newkim"}}]}
+2023-05-24 14:44:42.757[info] (post.list.result) {"count":2,"rows":[{"id":11,"boardId":3,"userId":11,"title":"5오늘 추천메뉴는 사천마라탕","content":"5사천마라탕 만사천오백원","viewCount":0,"imagePath":"5maratang.png","filePath":null,"createdAt":"2023-05-24T05:44:34.000Z","updatedAt":"2023-05-24T05:44:34.000Z","deletedAt":null,"User":{"id":11,"name":"뉴개발","role":"member","email":"[email protected]","phone":"010-1234-5678","userid":"newkim"}},{"id":10,"boardId":3,"userId":11,"title":"5오늘 추천메뉴는 사천마라탕","content":"5사천마라탕 만사천오백원","viewCount":0,"imagePath":null,"filePath":null,"createdAt":"2023-05-24T05:40:34.000Z","updatedAt":"2023-05-24T05:40:34.000Z","deletedAt":null,"User":{"id":11,"name":"뉴개발","role":"member","email":"[email protected]","phone":"010-1234-5678","userid":"newkim"}}]}
+2023-05-24 14:45:23.673[info] (post.info.params) {"id":"11"}
+2023-05-24 14:45:23.691[error] (postService.info) SequelizeDatabaseError: Unknown column 'Board.createAt' in 'field list'
+2023-05-24 14:48:16.167[info] app start
+2023-05-24 14:48:16.257[info] DB connection success
+2023-05-24 14:48:16.290[info] Sequelize sync success
+2023-05-24 14:48:34.326[info] (post.info.params) {"id":"11"}
+2023-05-24 14:48:34.352[debug] (postService.info) {"id":11,"boardId":3,"userId":11,"title":"5오늘 추천메뉴는 사천마라탕","content":"5사천마라탕 만사천오백원","viewCount":0,"imagePath":"5maratang.png","filePath":null,"createdAt":"2023-05-24T05:44:34.000Z","updatedAt":"2023-05-24T05:44:34.000Z","deletedAt":null,"Board":{"id":3,"active":true,"title":"떡볶이 마라탕","createdAt":"2023-05-24T02:01:08.000Z"},"User":{"id":11,"name":"뉴개발","role":"member","email":"[email protected]","phone":"010-1234-5678","userid":"newkim","Department":{"id":3,"name":"조승민팀","createdAt":"2023-05-22T06:48:43.000Z"}}}
+2023-05-24 14:48:34.355[info] (post.info.result) {"id":11,"boardId":3,"userId":11,"title":"5오늘 추천메뉴는 사천마라탕","content":"5사천마라탕 만사천오백원","viewCount":1,"imagePath":"5maratang.png","filePath":null,"createdAt":"2023-05-24T05:44:34.000Z","updatedAt":"2023-05-24T05:44:34.000Z","deletedAt":null,"Board":{"id":3,"active":true,"title":"떡볶이 마라탕","createdAt":"2023-05-24T02:01:08.000Z"},"User":{"id":11,"name":"뉴개발","role":"member","email":"[email protected]","phone":"010-1234-5678","userid":"newkim","Department":{"id":3,"name":"조승민팀","createdAt":"2023-05-22T06:48:43.000Z"}}}
+2023-05-24 14:49:09.838[info] (post.info.params) {"id":"11"}
+2023-05-24 14:49:09.850[debug] (postService.info) {"id":11,"boardId":3,"userId":11,"title":"5오늘 추천메뉴는 사천마라탕","content":"5사천마라탕 만사천오백원","viewCount":1,"imagePath":"5maratang.png","filePath":null,"createdAt":"2023-05-24T05:44:34.000Z","updatedAt":"2023-05-24T05:48:34.000Z","deletedAt":null,"Board":{"id":3,"active":true,"title":"떡볶이 마라탕","createdAt":"2023-05-24T02:01:08.000Z"},"User":{"id":11,"name":"뉴개발","role":"member","email":"[email protected]","phone":"010-1234-5678","userid":"newkim","Department":{"id":3,"name":"조승민팀","createdAt":"2023-05-22T06:48:43.000Z"}}}
+2023-05-24 14:49:09.853[info] (post.info.result) {"id":11,"boardId":3,"userId":11,"title":"5오늘 추천메뉴는 사천마라탕","content":"5사천마라탕 만사천오백원","viewCount":2,"imagePath":"5maratang.png","filePath":null,"createdAt":"2023-05-24T05:44:34.000Z","updatedAt":"2023-05-24T05:48:34.000Z","deletedAt":null,"Board":{"id":3,"active":true,"title":"떡볶이 마라탕","createdAt":"2023-05-24T02:01:08.000Z"},"User":{"id":11,"name":"뉴개발","role":"member","email":"[email protected]","phone":"010-1234-5678","userid":"newkim","Department":{"id":3,"name":"조승민팀","createdAt":"2023-05-22T06:48:43.000Z"}}}
+2023-05-24 14:49:16.099[info] (post.info.params) {"id":"11"}
+2023-05-24 14:49:16.108[debug] (postService.info) {"id":11,"boardId":3,"userId":11,"title":"5오늘 추천메뉴는 사천마라탕","content":"5사천마라탕 만사천오백원","viewCount":2,"imagePath":"5maratang.png","filePath":null,"createdAt":"2023-05-24T05:44:34.000Z","updatedAt":"2023-05-24T05:49:09.000Z","deletedAt":null,"Board":{"id":3,"active":true,"title":"떡볶이 마라탕","createdAt":"2023-05-24T02:01:08.000Z"},"User":{"id":11,"name":"뉴개발","role":"member","email":"[email protected]","phone":"010-1234-5678","userid":"newkim","Department":{"id":3,"name":"조승민팀","createdAt":"2023-05-22T06:48:43.000Z"}}}
+2023-05-24 14:49:16.110[info] (post.info.result) {"id":11,"boardId":3,"userId":11,"title":"5오늘 추천메뉴는 사천마라탕","content":"5사천마라탕 만사천오백원","viewCount":3,"imagePath":"5maratang.png","filePath":null,"createdAt":"2023-05-24T05:44:34.000Z","updatedAt":"2023-05-24T05:49:09.000Z","deletedAt":null,"Board":{"id":3,"active":true,"title":"떡볶이 마라탕","createdAt":"2023-05-24T02:01:08.000Z"},"User":{"id":11,"name":"뉴개발","role":"member","email":"[email protected]","phone":"010-1234-5678","userid":"newkim","Department":{"id":3,"name":"조승민팀","createdAt":"2023-05-22T06:48:43.000Z"}}}
+2023-05-24 14:49:16.453[info] (post.info.params) {"id":"11"}
+2023-05-24 14:49:16.459[debug] (postService.info) {"id":11,"boardId":3,"userId":11,"title":"5오늘 추천메뉴는 사천마라탕","content":"5사천마라탕 만사천오백원","viewCount":3,"imagePath":"5maratang.png","filePath":null,"createdAt":"2023-05-24T05:44:34.000Z","updatedAt":"2023-05-24T05:49:16.000Z","deletedAt":null,"Board":{"id":3,"active":true,"title":"떡볶이 마라탕","createdAt":"2023-05-24T02:01:08.000Z"},"User":{"id":11,"name":"뉴개발","role":"member","email":"[email protected]","phone":"010-1234-5678","userid":"newkim","Department":{"id":3,"name":"조승민팀","createdAt":"2023-05-22T06:48:43.000Z"}}}
+2023-05-24 14:49:16.461[info] (post.info.result) {"id":11,"boardId":3,"userId":11,"title":"5오늘 추천메뉴는 사천마라탕","content":"5사천마라탕 만사천오백원","viewCount":4,"imagePath":"5maratang.png","filePath":null,"createdAt":"2023-05-24T05:44:34.000Z","updatedAt":"2023-05-24T05:49:16.000Z","deletedAt":null,"Board":{"id":3,"active":true,"title":"떡볶이 마라탕","createdAt":"2023-05-24T02:01:08.000Z"},"User":{"id":11,"name":"뉴개발","role":"member","email":"[email protected]","phone":"010-1234-5678","userid":"newkim","Department":{"id":3,"name":"조승민팀","createdAt":"2023-05-22T06:48:43.000Z"}}}
+2023-05-24 14:49:17.056[info] (post.info.params) {"id":"11"}
+2023-05-24 14:49:17.065[debug] (postService.info) {"id":11,"boardId":3,"userId":11,"title":"5오늘 추천메뉴는 사천마라탕","content":"5사천마라탕 만사천오백원","viewCount":4,"imagePath":"5maratang.png","filePath":null,"createdAt":"2023-05-24T05:44:34.000Z","updatedAt":"2023-05-24T05:49:16.000Z","deletedAt":null,"Board":{"id":3,"active":true,"title":"떡볶이 마라탕","createdAt":"2023-05-24T02:01:08.000Z"},"User":{"id":11,"name":"뉴개발","role":"member","email":"[email protected]","phone":"010-1234-5678","userid":"newkim","Department":{"id":3,"name":"조승민팀","createdAt":"2023-05-22T06:48:43.000Z"}}}
+2023-05-24 14:49:17.067[info] (post.info.result) {"id":11,"boardId":3,"userId":11,"title":"5오늘 추천메뉴는 사천마라탕","content":"5사천마라탕 만사천오백원","viewCount":5,"imagePath":"5maratang.png","filePath":null,"createdAt":"2023-05-24T05:44:34.000Z","updatedAt":"2023-05-24T05:49:16.000Z","deletedAt":null,"Board":{"id":3,"active":true,"title":"떡볶이 마라탕","createdAt":"2023-05-24T02:01:08.000Z"},"User":{"id":11,"name":"뉴개발","role":"member","email":"[email protected]","phone":"010-1234-5678","userid":"newkim","Department":{"id":3,"name":"조승민팀","createdAt":"2023-05-22T06:48:43.000Z"}}}
+2023-05-24 14:49:17.557[info] (post.info.params) {"id":"11"}
+2023-05-24 14:49:17.566[debug] (postService.info) {"id":11,"boardId":3,"userId":11,"title":"5오늘 추천메뉴는 사천마라탕","content":"5사천마라탕 만사천오백원","viewCount":5,"imagePath":"5maratang.png","filePath":null,"createdAt":"2023-05-24T05:44:34.000Z","updatedAt":"2023-05-24T05:49:17.000Z","deletedAt":null,"Board":{"id":3,"active":true,"title":"떡볶이 마라탕","createdAt":"2023-05-24T02:01:08.000Z"},"User":{"id":11,"name":"뉴개발","role":"member","email":"[email protected]","phone":"010-1234-5678","userid":"newkim","Department":{"id":3,"name":"조승민팀","createdAt":"2023-05-22T06:48:43.000Z"}}}
+2023-05-24 14:49:17.568[info] (post.info.result) {"id":11,"boardId":3,"userId":11,"title":"5오늘 추천메뉴는 사천마라탕","content":"5사천마라탕 만사천오백원","viewCount":6,"imagePath":"5maratang.png","filePath":null,"createdAt":"2023-05-24T05:44:34.000Z","updatedAt":"2023-05-24T05:49:17.000Z","deletedAt":null,"Board":{"id":3,"active":true,"title":"떡볶이 마라탕","createdAt":"2023-05-24T02:01:08.000Z"},"User":{"id":11,"name":"뉴개발","role":"member","email":"[email protected]","phone":"010-1234-5678","userid":"newkim","Department":{"id":3,"name":"조승민팀","createdAt":"2023-05-22T06:48:43.000Z"}}}
+2023-05-24 14:49:17.942[info] (post.info.params) {"id":"11"}
+2023-05-24 14:49:17.952[debug] (postService.info) {"id":11,"boardId":3,"userId":11,"title":"5오늘 추천메뉴는 사천마라탕","content":"5사천마라탕 만사천오백원","viewCount":6,"imagePath":"5maratang.png","filePath":null,"createdAt":"2023-05-24T05:44:34.000Z","updatedAt":"2023-05-24T05:49:17.000Z","deletedAt":null,"Board":{"id":3,"active":true,"title":"떡볶이 마라탕","createdAt":"2023-05-24T02:01:08.000Z"},"User":{"id":11,"name":"뉴개발","role":"member","email":"[email protected]","phone":"010-1234-5678","userid":"newkim","Department":{"id":3,"name":"조승민팀","createdAt":"2023-05-22T06:48:43.000Z"}}}
+2023-05-24 14:49:17.954[info] (post.info.result) {"id":11,"boardId":3,"userId":11,"title":"5오늘 추천메뉴는 사천마라탕","content":"5사천마라탕 만사천오백원","viewCount":7,"imagePath":"5maratang.png","filePath":null,"createdAt":"2023-05-24T05:44:34.000Z","updatedAt":"2023-05-24T05:49:17.000Z","deletedAt":null,"Board":{"id":3,"active":true,"title":"떡볶이 마라탕","createdAt":"2023-05-24T02:01:08.000Z"},"User":{"id":11,"name":"뉴개발","role":"member","email":"[email protected]","phone":"010-1234-5678","userid":"newkim","Department":{"id":3,"name":"조승민팀","createdAt":"2023-05-22T06:48:43.000Z"}}}
+2023-05-24 14:49:18.408[info] (post.info.params) {"id":"11"}
+2023-05-24 14:49:18.415[debug] (postService.info) {"id":11,"boardId":3,"userId":11,"title":"5오늘 추천메뉴는 사천마라탕","content":"5사천마라탕 만사천오백원","viewCount":7,"imagePath":"5maratang.png","filePath":null,"createdAt":"2023-05-24T05:44:34.000Z","updatedAt":"2023-05-24T05:49:17.000Z","deletedAt":null,"Board":{"id":3,"active":true,"title":"떡볶이 마라탕","createdAt":"2023-05-24T02:01:08.000Z"},"User":{"id":11,"name":"뉴개발","role":"member","email":"[email protected]","phone":"010-1234-5678","userid":"newkim","Department":{"id":3,"name":"조승민팀","createdAt":"2023-05-22T06:48:43.000Z"}}}
+2023-05-24 14:49:18.417[info] (post.info.result) {"id":11,"boardId":3,"userId":11,"title":"5오늘 추천메뉴는 사천마라탕","content":"5사천마라탕 만사천오백원","viewCount":8,"imagePath":"5maratang.png","filePath":null,"createdAt":"2023-05-24T05:44:34.000Z","updatedAt":"2023-05-24T05:49:17.000Z","deletedAt":null,"Board":{"id":3,"active":true,"title":"떡볶이 마라탕","createdAt":"2023-05-24T02:01:08.000Z"},"User":{"id":11,"name":"뉴개발","role":"member","email":"[email protected]","phone":"010-1234-5678","userid":"newkim","Department":{"id":3,"name":"조승민팀","createdAt":"2023-05-22T06:48:43.000Z"}}}
+2023-05-24 14:49:18.805[info] (post.info.params) {"id":"11"}
+2023-05-24 14:49:18.811[debug] (postService.info) {"id":11,"boardId":3,"userId":11,"title":"5오늘 추천메뉴는 사천마라탕","content":"5사천마라탕 만사천오백원","viewCount":8,"imagePath":"5maratang.png","filePath":null,"createdAt":"2023-05-24T05:44:34.000Z","updatedAt":"2023-05-24T05:49:18.000Z","deletedAt":null,"Board":{"id":3,"active":true,"title":"떡볶이 마라탕","createdAt":"2023-05-24T02:01:08.000Z"},"User":{"id":11,"name":"뉴개발","role":"member","email":"[email protected]","phone":"010-1234-5678","userid":"newkim","Department":{"id":3,"name":"조승민팀","createdAt":"2023-05-22T06:48:43.000Z"}}}
+2023-05-24 14:49:18.813[info] (post.info.result) {"id":11,"boardId":3,"userId":11,"title":"5오늘 추천메뉴는 사천마라탕","content":"5사천마라탕 만사천오백원","viewCount":9,"imagePath":"5maratang.png","filePath":null,"createdAt":"2023-05-24T05:44:34.000Z","updatedAt":"2023-05-24T05:49:18.000Z","deletedAt":null,"Board":{"id":3,"active":true,"title":"떡볶이 마라탕","createdAt":"2023-05-24T02:01:08.000Z"},"User":{"id":11,"name":"뉴개발","role":"member","email":"[email protected]","phone":"010-1234-5678","userid":"newkim","Department":{"id":3,"name":"조승민팀","createdAt":"2023-05-22T06:48:43.000Z"}}}
+2023-05-24 14:50:16.336[info] (post.update.params) {"id":"11","title":"실은 짜장밥이 좋더라","content":"짜장밥 만사천오백원","imagePath":"jjajangbob.png"}
+2023-05-24 14:50:16.348[debug] (postService.edit) {"updatedCount":1}
+2023-05-24 14:50:16.349[info] (post.update.result) {"updatedCount":1}
+2023-05-24 14:50:37.592[info] (post.delete.params) {"id":"10"}
+2023-05-24 14:50:37.609[debug] (postService.delete) {"deletedCount":1}
+2023-05-24 14:50:37.610[info] (post.delete.result) {"deletedCount":1}
+2023-05-24 15:06:27.586[info] (comment.reg.params) {"postId":"11","content":"사천마라탕이 맛있죠","userId":"11"}
+2023-05-24 15:06:27.587[error] Error: Not allowed null (boardId, title)
+2023-05-24 15:06:27.590[error] (commentService.reg) SequelizeValidationError: notNull Violation: Post.boardId cannot be null,
+notNull Violation: Post.title cannot be null
+2023-05-24 15:07:53.431[info] app start
+2023-05-24 15:07:53.520[info] DB connection success
+2023-05-24 15:07:53.552[info] Sequelize sync success
+2023-05-24 15:08:00.623[info] (comment.reg.params) {"postId":"11","content":"사천마라탕이 맛있죠","userId":"11"}
+2023-05-24 15:08:00.632[error] (commentService.reg) SequelizeValidationError: notNull Violation: Post.boardId cannot be null,
+notNull Violation: Post.title cannot be null
+2023-05-24 15:08:34.230[info] app start
+2023-05-24 15:08:34.331[info] DB connection success
+2023-05-24 15:08:34.358[info] Sequelize sync success
+2023-05-24 15:10:00.696[info] app start
+2023-05-24 15:10:00.803[info] DB connection success
+2023-05-24 15:10:00.833[info] Sequelize sync success
+2023-05-24 15:11:07.865[info] app start
+2023-05-24 15:11:07.957[info] DB connection success
+2023-05-24 15:11:07.984[info] Sequelize sync success
+2023-05-24 15:11:10.714[info] (comment.reg.params) {"postId":"11","content":"사천마라탕이 맛있죠","userId":"11"}
+2023-05-24 15:11:10.737[debug] (commentService.reg) {"id":1,"postId":"11","content":"사천마라탕이 맛있죠","userId":"11","updatedAt":"2023-05-24T06:11:10.717Z","createdAt":"2023-05-24T06:11:10.717Z"}
+2023-05-24 15:11:10.738[info] (comment.reg.result) {"id":1,"postId":"11","content":"사천마라탕이 맛있죠","userId":"11","updatedAt":"2023-05-24T06:11:10.717Z","createdAt":"2023-05-24T06:11:10.717Z"}
+2023-05-24 15:11:59.792[info] (comment.reg.params) {"postId":"11","content":"제목 언제 바꿨다냐","userId":"11"}
+2023-05-24 15:11:59.808[debug] (commentService.reg) {"id":2,"postId":"11","content":"제목 언제 바꿨다냐","userId":"11","updatedAt":"2023-05-24T06:11:59.793Z","createdAt":"2023-05-24T06:11:59.793Z"}
+2023-05-24 15:11:59.808[info] (comment.reg.result) {"id":2,"postId":"11","content":"제목 언제 바꿨다냐","userId":"11","updatedAt":"2023-05-24T06:11:59.793Z","createdAt":"2023-05-24T06:11:59.793Z"}
+2023-05-24 15:12:08.009[info] (comment.reg.params) {"postId":"11","content":"짜장밥 별로..-.-","userId":"11"}
+2023-05-24 15:12:08.018[debug] (commentService.reg) {"id":3,"postId":"11","content":"짜장밥 별로..-.-","userId":"11","updatedAt":"2023-05-24T06:12:08.010Z","createdAt":"2023-05-24T06:12:08.010Z"}
+2023-05-24 15:12:08.019[info] (comment.reg.result) {"id":3,"postId":"11","content":"짜장밥 별로..-.-","userId":"11","updatedAt":"2023-05-24T06:12:08.010Z","createdAt":"2023-05-24T06:12:08.010Z"}
+2023-05-24 15:12:25.072[info] (comment.reg.params) {"postId":"11","content":"ㅗㅗㅗ","userId":"11"}
+2023-05-24 15:12:25.089[debug] (commentService.reg) {"id":4,"postId":"11","content":"ㅗㅗㅗ","userId":"11","updatedAt":"2023-05-24T06:12:25.073Z","createdAt":"2023-05-24T06:12:25.073Z"}
+2023-05-24 15:12:25.090[info] (comment.reg.result) {"id":4,"postId":"11","content":"ㅗㅗㅗ","userId":"11","updatedAt":"2023-05-24T06:12:25.073Z","createdAt":"2023-05-24T06:12:25.073Z"}
+2023-05-24 15:13:12.538[info] (comment.list.params) {"content":"","userIds":null,"postIds":null}
+2023-05-24 15:13:12.560[debug] (commentService.list) {"count":4,"rows":[{"id":4,"postId":11,"userId":11,"content":"ㅗㅗㅗ","createdAt":"2023-05-24T06:12:25.000Z","updatedAt":"2023-05-24T06:12:25.000Z","deletedAt":null,"User":{"id":11,"name":"뉴개발","role":"member","email":"[email protected]","phone":"010-1234-5678","userid":"newkim"}},{"id":3,"postId":11,"userId":11,"content":"짜장밥 별로..-.-","createdAt":"2023-05-24T06:12:08.000Z","updatedAt":"2023-05-24T06:12:08.000Z","deletedAt":null,"User":{"id":11,"name":"뉴개발","role":"member","email":"[email protected]","phone":"010-1234-5678","userid":"newkim"}},{"id":2,"postId":11,"userId":11,"content":"제목 언제 바꿨다냐","createdAt":"2023-05-24T06:11:59.000Z","updatedAt":"2023-05-24T06:11:59.000Z","deletedAt":null,"User":{"id":11,"name":"뉴개발","role":"member","email":"[email protected]","phone":"010-1234-5678","userid":"newkim"}},{"id":1,"postId":11,"userId":11,"content":"사천마라탕이 맛있죠","createdAt":"2023-05-24T06:11:10.000Z","updatedAt":"2023-05-24T06:11:10.000Z","deletedAt":null,"User":{"id":11,"name":"뉴개발","role":"member","email":"[email protected]","phone":"010-1234-5678","userid":"newkim"}}]}
+2023-05-24 15:13:12.562[info] (comment.list.result) {"count":4,"rows":[{"id":4,"postId":11,"userId":11,"content":"ㅗㅗㅗ","createdAt":"2023-05-24T06:12:25.000Z","updatedAt":"2023-05-24T06:12:25.000Z","deletedAt":null,"User":{"id":11,"name":"뉴개발","role":"member","email":"[email protected]","phone":"010-1234-5678","userid":"newkim"}},{"id":3,"postId":11,"userId":11,"content":"짜장밥 별로..-.-","createdAt":"2023-05-24T06:12:08.000Z","updatedAt":"2023-05-24T06:12:08.000Z","deletedAt":null,"User":{"id":11,"name":"뉴개발","role":"member","email":"[email protected]","phone":"010-1234-5678","userid":"newkim"}},{"id":2,"postId":11,"userId":11,"content":"제목 언제 바꿨다냐","createdAt":"2023-05-24T06:11:59.000Z","updatedAt":"2023-05-24T06:11:59.000Z","deletedAt":null,"User":{"id":11,"name":"뉴개발","role":"member","email":"[email protected]","phone":"010-1234-5678","userid":"newkim"}},{"id":1,"postId":11,"userId":11,"content":"사천마라탕이 맛있죠","createdAt":"2023-05-24T06:11:10.000Z","updatedAt":"2023-05-24T06:11:10.000Z","deletedAt":null,"User":{"id":11,"name":"뉴개발","role":"member","email":"[email protected]","phone":"010-1234-5678","userid":"newkim"}}]}
+2023-05-24 15:13:23.647[info] (comment.list.params) {"content":"","userIds":null,"postIds":null}
+2023-05-24 15:13:23.659[debug] (commentService.list) {"count":4,"rows":[{"id":4,"postId":11,"userId":11,"content":"ㅗㅗㅗ","createdAt":"2023-05-24T06:12:25.000Z","updatedAt":"2023-05-24T06:12:25.000Z","deletedAt":null,"User":{"id":11,"name":"뉴개발","role":"member","email":"[email protected]","phone":"010-1234-5678","userid":"newkim"}},{"id":3,"postId":11,"userId":11,"content":"짜장밥 별로..-.-","createdAt":"2023-05-24T06:12:08.000Z","updatedAt":"2023-05-24T06:12:08.000Z","deletedAt":null,"User":{"id":11,"name":"뉴개발","role":"member","email":"[email protected]","phone":"010-1234-5678","userid":"newkim"}},{"id":2,"postId":11,"userId":11,"content":"제목 언제 바꿨다냐","createdAt":"2023-05-24T06:11:59.000Z","updatedAt":"2023-05-24T06:11:59.000Z","deletedAt":null,"User":{"id":11,"name":"뉴개발","role":"member","email":"[email protected]","phone":"010-1234-5678","userid":"newkim"}},{"id":1,"postId":11,"userId":11,"content":"사천마라탕이 맛있죠","createdAt":"2023-05-24T06:11:10.000Z","updatedAt":"2023-05-24T06:11:10.000Z","deletedAt":null,"User":{"id":11,"name":"뉴개발","role":"member","email":"[email protected]","phone":"010-1234-5678","userid":"newkim"}}]}
+2023-05-24 15:13:23.660[info] (comment.list.result) {"count":4,"rows":[{"id":4,"postId":11,"userId":11,"content":"ㅗㅗㅗ","createdAt":"2023-05-24T06:12:25.000Z","updatedAt":"2023-05-24T06:12:25.000Z","deletedAt":null,"User":{"id":11,"name":"뉴개발","role":"member","email":"[email protected]","phone":"010-1234-5678","userid":"newkim"}},{"id":3,"postId":11,"userId":11,"content":"짜장밥 별로..-.-","createdAt":"2023-05-24T06:12:08.000Z","updatedAt":"2023-05-24T06:12:08.000Z","deletedAt":null,"User":{"id":11,"name":"뉴개발","role":"member","email":"[email protected]","phone":"010-1234-5678","userid":"newkim"}},{"id":2,"postId":11,"userId":11,"content":"제목 언제 바꿨다냐","createdAt":"2023-05-24T06:11:59.000Z","updatedAt":"2023-05-24T06:11:59.000Z","deletedAt":null,"User":{"id":11,"name":"뉴개발","role":"member","email":"[email protected]","phone":"010-1234-5678","userid":"newkim"}},{"id":1,"postId":11,"userId":11,"content":"사천마라탕이 맛있죠","createdAt":"2023-05-24T06:11:10.000Z","updatedAt":"2023-05-24T06:11:10.000Z","deletedAt":null,"User":{"id":11,"name":"뉴개발","role":"member","email":"[email protected]","phone":"010-1234-5678","userid":"newkim"}}]}
+2023-05-24 15:13:33.081[info] (comment.list.params) {"content":"","userIds":null,"postIds":null}
+2023-05-24 15:13:33.087[debug] (commentService.list) {"count":4,"rows":[{"id":4,"postId":11,"userId":11,"content":"ㅗㅗㅗ","createdAt":"2023-05-24T06:12:25.000Z","updatedAt":"2023-05-24T06:12:25.000Z","deletedAt":null,"User":{"id":11,"name":"뉴개발","role":"member","email":"[email protected]","phone":"010-1234-5678","userid":"newkim"}},{"id":3,"postId":11,"userId":11,"content":"짜장밥 별로..-.-","createdAt":"2023-05-24T06:12:08.000Z","updatedAt":"2023-05-24T06:12:08.000Z","deletedAt":null,"User":{"id":11,"name":"뉴개발","role":"member","email":"[email protected]","phone":"010-1234-5678","userid":"newkim"}},{"id":2,"postId":11,"userId":11,"content":"제목 언제 바꿨다냐","createdAt":"2023-05-24T06:11:59.000Z","updatedAt":"2023-05-24T06:11:59.000Z","deletedAt":null,"User":{"id":11,"name":"뉴개발","role":"member","email":"[email protected]","phone":"010-1234-5678","userid":"newkim"}},{"id":1,"postId":11,"userId":11,"content":"사천마라탕이 맛있죠","createdAt":"2023-05-24T06:11:10.000Z","updatedAt":"2023-05-24T06:11:10.000Z","deletedAt":null,"User":{"id":11,"name":"뉴개발","role":"member","email":"[email protected]","phone":"010-1234-5678","userid":"newkim"}}]}
+2023-05-24 15:13:33.089[info] (comment.list.result) {"count":4,"rows":[{"id":4,"postId":11,"userId":11,"content":"ㅗㅗㅗ","createdAt":"2023-05-24T06:12:25.000Z","updatedAt":"2023-05-24T06:12:25.000Z","deletedAt":null,"User":{"id":11,"name":"뉴개발","role":"member","email":"[email protected]","phone":"010-1234-5678","userid":"newkim"}},{"id":3,"postId":11,"userId":11,"content":"짜장밥 별로..-.-","createdAt":"2023-05-24T06:12:08.000Z","updatedAt":"2023-05-24T06:12:08.000Z","deletedAt":null,"User":{"id":11,"name":"뉴개발","role":"member","email":"[email protected]","phone":"010-1234-5678","userid":"newkim"}},{"id":2,"postId":11,"userId":11,"content":"제목 언제 바꿨다냐","createdAt":"2023-05-24T06:11:59.000Z","updatedAt":"2023-05-24T06:11:59.000Z","deletedAt":null,"User":{"id":11,"name":"뉴개발","role":"member","email":"[email protected]","phone":"010-1234-5678","userid":"newkim"}},{"id":1,"postId":11,"userId":11,"content":"사천마라탕이 맛있죠","createdAt":"2023-05-24T06:11:10.000Z","updatedAt":"2023-05-24T06:11:10.000Z","deletedAt":null,"User":{"id":11,"name":"뉴개발","role":"member","email":"[email protected]","phone":"010-1234-5678","userid":"newkim"}}]}
+2023-05-24 15:13:38.491[info] (comment.list.params) {"content":"ㅗ","userIds":null,"postIds":null}
+2023-05-24 15:13:38.504[debug] (commentService.list) {"count":1,"rows":[{"id":4,"postId":11,"userId":11,"content":"ㅗㅗㅗ","createdAt":"2023-05-24T06:12:25.000Z","updatedAt":"2023-05-24T06:12:25.000Z","deletedAt":null,"User":{"id":11,"name":"뉴개발","role":"member","email":"[email protected]","phone":"010-1234-5678","userid":"newkim"}}]}
+2023-05-24 15:13:38.504[info] (comment.list.result) {"count":1,"rows":[{"id":4,"postId":11,"userId":11,"content":"ㅗㅗㅗ","createdAt":"2023-05-24T06:12:25.000Z","updatedAt":"2023-05-24T06:12:25.000Z","deletedAt":null,"User":{"id":11,"name":"뉴개발","role":"member","email":"[email protected]","phone":"010-1234-5678","userid":"newkim"}}]}
+2023-05-24 15:13:45.259[info] (comment.list.params) {"content":"ㅗ","userIds":null,"postIds":null}
+2023-05-24 15:13:45.269[debug] (commentService.list) {"count":1,"rows":[{"id":4,"postId":11,"userId":11,"content":"ㅗㅗㅗ","createdAt":"2023-05-24T06:12:25.000Z","updatedAt":"2023-05-24T06:12:25.000Z","deletedAt":null,"User":{"id":11,"name":"뉴개발","role":"member","email":"[email protected]","phone":"010-1234-5678","userid":"newkim"}}]}
+2023-05-24 15:13:45.270[info] (comment.list.result) {"count":1,"rows":[{"id":4,"postId":11,"userId":11,"content":"ㅗㅗㅗ","createdAt":"2023-05-24T06:12:25.000Z","updatedAt":"2023-05-24T06:12:25.000Z","deletedAt":null,"User":{"id":11,"name":"뉴개발","role":"member","email":"[email protected]","phone":"010-1234-5678","userid":"newkim"}}]}
+2023-05-24 15:14:00.622[info] (comment.info.params) {"id":"1"}
+2023-05-24 15:14:00.624[error] (commentService.info) SequelizeEagerLoadingError: Board is not associated to Comment!
+2023-05-24 15:21:59.814[info] app start
+2023-05-24 15:21:59.933[info] DB connection success
+2023-05-24 15:21:59.962[info] Sequelize sync success
+2023-05-24 15:22:05.505[info] (comment.info.params) {"id":"1"}
+2023-05-24 15:22:05.509[error] (commentService.info) SequelizeEagerLoadingError: Board is not associated to Comment!
+2023-05-24 15:45:48.934[info] app start
+2023-05-24 15:45:49.031[info] DB connection success
+2023-05-24 15:45:49.067[info] Sequelize sync success
+2023-05-24 15:48:53.572[info] app start
+2023-05-24 15:48:53.662[info] DB connection success
+2023-05-24 15:48:53.691[info] Sequelize sync success
+2023-05-24 15:49:57.882[info] app start
+2023-05-24 15:49:57.973[info] DB connection success
+2023-05-24 15:49:58.001[info] Sequelize sync success
+2023-05-24 15:50:16.625[info] app start
+2023-05-24 15:50:16.717[info] DB connection success
+2023-05-24 15:50:16.743[info] Sequelize sync success
+2023-05-24 15:52:04.447[info] (comment.info.params) {"id":"1"}
+2023-05-24 15:52:04.451[error] (commentService.info) SequelizeEagerLoadingError: Board is not associated to Comment!
+2023-05-24 15:56:51.840[info] app start
+2023-05-24 15:56:51.942[info] DB connection success
+2023-05-24 15:56:51.973[info] Sequelize sync success
+2023-05-24 15:57:02.257[info] app start
+2023-05-24 15:57:02.345[info] DB connection success
+2023-05-24 15:57:02.374[info] Sequelize sync success
+2023-05-24 15:57:08.614[info] (comment.info.params) {"id":"1"}
+2023-05-24 15:57:08.623[error] (commentService.info) SequelizeEagerLoadingError: Board is not associated to Comment!
+2023-05-24 15:58:42.149[info] app start
+2023-05-24 15:58:42.245[info] DB connection success
+2023-05-24 15:58:42.275[info] Sequelize sync success
+2023-05-24 15:58:58.156[info] app start
+2023-05-24 15:58:58.242[info] DB connection success
+2023-05-24 15:58:58.270[info] Sequelize sync success
+2023-05-24 15:59:39.592[info] (comment.info.params) {"id":"1"}
+2023-05-24 15:59:39.600[error] (commentService.info) SequelizeEagerLoadingError: Board is not associated to Comment!
+2023-05-24 15:59:46.637[info] app start
+2023-05-24 15:59:46.728[info] DB connection success
+2023-05-24 15:59:46.773[info] Sequelize sync success
+2023-05-24 15:59:48.598[info] (comment.info.params) {"id":"1"}
+2023-05-24 15:59:48.604[error] (commentService.info) SequelizeEagerLoadingError: Board is not associated to Comment!
+2023-05-24 16:00:32.507[info] app start
+2023-05-24 16:00:32.614[info] DB connection success
+2023-05-24 16:00:32.643[info] Sequelize sync success
+2023-05-24 16:00:35.520[info] (comment.info.params) {"id":"1"}
+2023-05-24 16:00:35.525[error] (commentService.info) SequelizeEagerLoadingError: Board is not associated to Comment!
+2023-05-24 16:00:38.227[info] app start
+2023-05-24 16:00:38.322[info] DB connection success
+2023-05-24 16:00:38.353[info] Sequelize sync success
+2023-05-24 16:00:48.813[info] (comment.info.params) {"id":"1"}
+2023-05-24 16:00:48.824[error] (commentService.info) SequelizeEagerLoadingError: Board is not associated to Comment!
+2023-05-24 16:04:59.676[info] app start
+2023-05-24 16:04:59.762[info] DB connection success
+2023-05-24 16:04:59.787[info] Sequelize sync success
+2023-05-24 16:05:49.318[info] app start
+2023-05-24 16:05:49.403[info] DB connection success
+2023-05-24 16:05:49.481[info] Sequelize sync success
+2023-05-24 16:06:41.282[info] app start
+2023-05-24 16:06:41.368[info] DB connection success
+2023-05-24 16:06:41.398[info] Sequelize sync success
+2023-05-24 16:06:53.471[info] (comment.reg.params) {"postId":"11","content":"ㅗㅗㅗ","userId":"11"}
+2023-05-24 16:06:53.491[debug] (commentService.reg) {"id":1,"postId":"11","content":"ㅗㅗㅗ","userId":"11","updatedAt":"2023-05-24T07:06:53.473Z","createdAt":"2023-05-24T07:06:53.473Z"}
+2023-05-24 16:06:53.494[info] (comment.reg.result) {"id":1,"postId":"11","content":"ㅗㅗㅗ","userId":"11","updatedAt":"2023-05-24T07:06:53.473Z","createdAt":"2023-05-24T07:06:53.473Z"}
+2023-05-24 16:06:58.182[info] (comment.info.params) {"id":"1"}
+2023-05-24 16:06:58.187[error] (commentService.info) SequelizeEagerLoadingError: Board is not associated to Comment!
+2023-05-24 16:08:02.679[info] (post.info.params) {"id":"11"}
+2023-05-24 16:08:02.701[debug] (postService.info) {"id":11,"boardId":3,"userId":11,"title":"실은 짜장밥이 좋더라","content":"짜장밥 만사천오백원","viewCount":9,"imagePath":"jjajangbob.png","filePath":null,"createdAt":"2023-05-24T05:44:34.000Z","updatedAt":"2023-05-24T05:50:16.000Z","deletedAt":null,"Board":{"id":3,"active":true,"title":"떡볶이 마라탕","createdAt":"2023-05-24T02:01:08.000Z"},"Comments":[{"id":1,"userId":11,"content":"ㅗㅗㅗ","createdAt":"2023-05-24T07:06:53.000Z","User":{"id":11,"name":"뉴개발","role":"member","email":"[email protected]","phone":"010-1234-5678","userid":"newkim"}}],"User":{"id":11,"name":"뉴개발","role":"member","email":"[email protected]","phone":"010-1234-5678","userid":"newkim","Department":{"id":3,"name":"조승민팀","createdAt":"2023-05-22T06:48:43.000Z"}}}
+2023-05-24 16:08:02.704[info] (post.info.result) {"id":11,"boardId":3,"userId":11,"title":"실은 짜장밥이 좋더라","content":"짜장밥 만사천오백원","viewCount":10,"imagePath":"jjajangbob.png","filePath":null,"createdAt":"2023-05-24T05:44:34.000Z","updatedAt":"2023-05-24T05:50:16.000Z","deletedAt":null,"Board":{"id":3,"active":true,"title":"떡볶이 마라탕","createdAt":"2023-05-24T02:01:08.000Z"},"Comments":[{"id":1,"userId":11,"content":"ㅗㅗㅗ","createdAt":"2023-05-24T07:06:53.000Z","User":{"id":11,"name":"뉴개발","role":"member","email":"[email protected]","phone":"010-1234-5678","userid":"newkim"}}],"User":{"id":11,"name":"뉴개발","role":"member","email":"[email protected]","phone":"010-1234-5678","userid":"newkim","Department":{"id":3,"name":"조승민팀","createdAt":"2023-05-22T06:48:43.000Z"}}}
+2023-05-24 16:09:23.974[info] app start
+2023-05-24 16:09:24.091[info] DB connection success
+2023-05-24 16:09:24.120[info] Sequelize sync success
+2023-05-24 16:09:29.932[info] app start
+2023-05-24 16:09:30.018[info] DB connection success
+2023-05-24 16:09:30.047[info] Sequelize sync success
+2023-05-24 16:26:43.303[info] app start
+2023-05-24 16:26:43.410[info] DB connection success
+2023-05-24 16:26:43.454[info] Sequelize sync success
+2023-05-24 16:26:53.171[info] (comment.info.params) {"id":"1"}
+2023-05-24 16:26:53.200[debug] (commentService.info) {"id":1,"postId":11,"userId":11,"content":"ㅗㅗㅗ","createdAt":"2023-05-24T07:06:53.000Z","updatedAt":"2023-05-24T07:06:53.000Z","deletedAt":null,"Post":{"id":11,"userId":11,"title":"실은 짜장밥이 좋더라","viewCount":10,"Board":{"id":3,"active":true,"title":"떡볶이 마라탕","createdAt":"2023-05-24T02:01:08.000Z"}},"User":{"id":11,"name":"뉴개발","role":"member","email":"[email protected]","phone":"010-1234-5678","userid":"newkim","Department":{"id":3,"name":"조승민팀","createdAt":"2023-05-22T06:48:43.000Z"}}}
+2023-05-24 16:26:53.202[info] (comment.info.result) {"id":1,"postId":11,"userId":11,"content":"ㅗㅗㅗ","createdAt":"2023-05-24T07:06:53.000Z","updatedAt":"2023-05-24T07:06:53.000Z","deletedAt":null,"Post":{"id":11,"userId":11,"title":"실은 짜장밥이 좋더라","viewCount":10,"Board":{"id":3,"active":true,"title":"떡볶이 마라탕","createdAt":"2023-05-24T02:01:08.000Z"}},"User":{"id":11,"name":"뉴개발","role":"member","email":"[email protected]","phone":"010-1234-5678","userid":"newkim","Department":{"id":3,"name":"조승민팀","createdAt":"2023-05-22T06:48:43.000Z"}}}
+2023-05-24 16:27:03.188[info] uploads\1684913223185-image1.png
+2023-05-24 16:27:03.189[info] (post.reg.result) {}
+2023-05-24 16:54:42.443[info] app start
+2023-05-24 16:54:42.538[info] DB connection success
+2023-05-24 16:54:42.565[info] Sequelize sync success
+2023-05-24 16:54:59.810[info] (post.reg.result) {"originalname":"image1.png","filename":"1684914899806-image1.png","path":"uploads\\1684914899806-image1.png"}
+2023-05-24 17:45:50.705[info] app start
+2023-05-24 17:45:50.802[info] DB connection success
+2023-05-24 17:45:50.828[info] Sequelize sync success
