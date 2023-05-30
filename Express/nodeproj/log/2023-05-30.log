@@ -1,0 +1,26 @@
+2023-05-30 08:50:49.733[info] app start
+2023-05-30 08:50:49.848[info] DB connection success
+2023-05-30 08:50:49.912[info] Sequelize sync success
+2023-05-30 08:50:53.676[info] (weather.reg.params) {"numOfRow":100,"pageNo":1,"dataType":"JSON","base_date":"20230525","base_time":"0500","lat":37.495669,"lng":127.029944}
+2023-05-30 08:50:53.806[debug] (weatherUtil.getData)-undefined
+2023-05-30 08:51:27.560[info] app start
+2023-05-30 08:51:27.656[info] DB connection success
+2023-05-30 08:51:27.692[info] Sequelize sync success
+2023-05-30 08:51:29.482[info] (weather.reg.params) {"numOfRow":100,"pageNo":1,"dataType":"JSON","base_date":"20230525","base_time":"0500","lat":37.495669,"lng":127.029944}
+2023-05-30 08:51:29.563[debug] (weatherUtil.getData)-undefined
+2023-05-30 08:51:29.563[info] (weather.reg.result) {}
+2023-05-30 08:52:11.919[info] app start
+2023-05-30 08:52:12.011[info] DB connection success
+2023-05-30 08:52:12.041[info] Sequelize sync success
+2023-05-30 08:52:15.426[info] (weather.reg.params) {"numOfRow":100,"pageNo":1,"dataType":"JSON","base_date":"20230525","base_time":"0500","lat":37.495669,"lng":127.029944}
+2023-05-30 08:52:15.506[error] (weatherUtil.getData)-TypeError: Cannot read property 'forEach' of undefined
+2023-05-30 08:52:15.507[info] (weather.reg.result) {"result":{}}
+2023-05-30 08:52:38.572[info] app start
+2023-05-30 08:52:38.687[info] DB connection success
+2023-05-30 08:52:38.723[info] Sequelize sync success
+2023-05-30 08:52:40.555[info] (weather.reg.params) {"numOfRow":100,"pageNo":1,"dataType":"JSON","base_date":"20230525","base_time":"0500","lat":37.495669,"lng":127.029944}
+2023-05-30 08:52:43.671[error] (weatherUtil.getData)-TypeError: Cannot read property 'forEach' of undefined
+2023-05-30 08:52:43.673[info] (weather.reg.result) {"result":{}}
+2023-05-30 08:52:55.269[info] (weather.reg.params) {"numOfRow":100,"pageNo":1,"dataType":"JSON","base_date":"20230530","base_time":"0500","lat":37.495669,"lng":127.029944}
+2023-05-30 08:52:55.355[debug] (weatherUtil.getData)-[object Object]
+2023-05-30 08:52:55.357[info] (weather.reg.result) {"result":{"TMP":[{"baseDate":"20230530","baseTime":"0500","category":"TMP","fcstDate":"20230530","fcstTime":"0600","fcstValue":"20","nx":61,"ny":125}],"UUU":[{"baseDate":"20230530","baseTime":"0500","category":"UUU","fcstDate":"20230530","fcstTime":"0600","fcstValue":"-0.6","nx":61,"ny":125}],"VVV":[{"baseDate":"20230530","baseTime":"0500","category":"VVV","fcstDate":"20230530","fcstTime":"0600","fcstValue":"0.3","nx":61,"ny":125}],"VEC":[{"baseDate":"20230530","baseTime":"0500","category":"VEC","fcstDate":"20230530","fcstTime":"0600","fcstValue":"113","nx":61,"ny":125}],"WSD":[{"baseDate":"20230530","baseTime":"0500","category":"WSD","fcstDate":"20230530","fcstTime":"0600","fcstValue":"0.8","nx":61,"ny":125}],"SKY":[{"baseDate":"20230530","baseTime":"0500","category":"SKY","fcstDate":"20230530","fcstTime":"0600","fcstValue":"4","nx":61,"ny":125}],"PTY":[{"baseDate":"20230530","baseTime":"0500","category":"PTY","fcstDate":"20230530","fcstTime":"0600","fcstValue":"0","nx":61,"ny":125}],"POP":[{"baseDate":"20230530","baseTime":"0500","category":"POP","fcstDate":"20230530","fcstTime":"0600","fcstValue":"30","nx":61,"ny":125}],"WAV":[{"baseDate":"20230530","baseTime":"0500","category":"WAV","fcstDate":"20230530","fcstTime":"0600","fcstValue":"0","nx":61,"ny":125}],"PCP":[{"baseDate":"20230530","baseTime":"0500","category":"PCP","fcstDate":"20230530","fcstTime":"0600","fcstValue":"강수없음","nx":61,"ny":125}]}}
